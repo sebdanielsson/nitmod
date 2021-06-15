@@ -45,7 +45,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://etmods.net/forums',
+          href: 'http://etmods.net/forums',
           label: 'Forums',
           position: 'right',
         },
