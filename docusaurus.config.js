@@ -18,7 +18,7 @@ module.exports = {
     navbar: {
       title: 'N!tmod',
       logo: {
-        alt: 'N!tmod Logo',
+        alt: 'Nitmod Logo',
         src: 'img/nitmod.webp',
       },
       items: [
