@@ -19,7 +19,7 @@ module.exports = {
       title: 'N!tmod',
       logo: {
         alt: 'N!tmod Logo',
-        src: 'img/logo.svg',
+        src: 'img/nitmod.webp',
       },
       items: [
         {

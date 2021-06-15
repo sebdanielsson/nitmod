@@ -17,6 +17,23 @@
   --ifm-code-font-size: 95%;
 }
 
+.hero__title, .hero__subtitle {
+  color: #F5F6F7;
+}
+
+.navbar__image {
+  
+}
+
+.navbar__link:hover, .navbar__link--active {
+  color: #aa0000;
+  text-decoration: none;
+}
+
+.navbar__title {
+  overflow: visible;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
