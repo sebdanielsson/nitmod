@@ -85,12 +85,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Forums',
-              href: 'https://etmods.net/forums',
-            },
-            {
               label: 'Discord',
               href: 'https://discord.gg/UHBpfFMHSX',
+            },
+            {
+              label: 'Forums',
+              href: 'https://etmods.net/forums',
             },
             {
               label: 'GitHub',
@@ -106,12 +106,16 @@ module.exports = {
               to: '/blog',
             },
             {
-              label: 'Blog',
+              label: 'Stats',
               to: 'http://stats.etmods.net',
             },
             {
               label: 'Bug Tracker',
               to: 'http://bugs.etmods.net',
+            },
+            {
+              label: 'Donate',
+              to: 'https://etmods.net/donate',
             },
           ],
         },
