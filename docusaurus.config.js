@@ -47,7 +47,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/nitmod/nitmod',
+          href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -78,7 +78,7 @@ module.exports = {
           items: [
             {
               label: 'Tutorial',
-              to: '/forums',
+              to: 'https://etmods.net/forums',
             },
           ],
         },
@@ -86,16 +86,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://discord.gg/UHBpfFMHSX',
             },
           ],
         },
@@ -113,7 +109,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} N!tmod.`,
     },
   },
   presets: [
