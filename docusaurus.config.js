@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/nitmod-square.webp',
   organizationName: 'nitmod', // Usually your GitHub org/user name.
   projectName: 'nitmod', // Usually your repo name.
   themeConfig: {
