@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'N!tmod',
-  tagline: "Let's come up with a good tagline",
+  tagline: 'Available for ET: Legacy 32-bit & 64-bit',
   url: 'https://etmods.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/nitmod-square.webp',
-  organizationName: 'nitmod', // Usually your GitHub org/user name.
-  projectName: 'nitmod', // Usually your repo name.
+  organizationName: 'sebdanielsson', // Usually your GitHub org/user name.
+  projectName: 'nitmod-docusaurus', // Usually your repo name.
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
@@ -131,13 +131,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/sebdanielsson/nitmod-docusaurus/edit/main/website/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/sebdanielsson/nitmod-docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

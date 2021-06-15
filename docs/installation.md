@@ -1,43 +1,22 @@
 ---
 sidebar_position: 2
 ---
+
 # Installation
 
-Download N!tmod
+## Download
 
-Download the latest version of N!tmod from here
+[Nitmod 2.3.4 Beta 4](http://etmods.net/downloads/nitmod_2.3.4-b4.zip)
 
-Installing/Updating
+## Install/Update
 
-Depending on how the mod package was created, it may contain all the required files inside a "nitmod" folder, or directly into the Zip root.
+1. Stop the server.
+2. If installing for the first time, create a nitmod folder next to your etmain folder.
+3. Copy the .pk3 and the library file to the nitmod folder. If you're running a Windows server, it's the .dll. For macOS it's qagame_mac. For Linux x86 and x64 it's i386.so and x86_64.so respectively. If you're making an upgrade, delete the old .pk3.
+4. If installing for the first time, change your server's "fs_game" cvar to "nitmod" (either in your control panel for rented game servers, or in your startup command if you're hosting it yourself).
+5. Start the server.
 
-Installing for the first time
-
-Stop your server
-Unzip the mod package.
-If the mod package doesn't contain a "nitmod" folder:
-Create a "nitmod" folder on your server, next to the "etmain" folder.
-Upload the content of the mod package to the folder you just created
-If the mod package contains a "nitmod" folder:
-Upload the "nitmod" folder to your server's root (near "etmain")
-Once the files are uploaded:
-Change your server's "fs_game" cvar to "nitmod" (either in your control panel for rented game servers, or in your startup command line if you're hosting it yourself)
-Start your server
-
-Updating
-
-Stop your server
-Delete the current mod pk3 file from your server's "nitmod" folder (usually nitmod_*.*.pk3)
-Unzip the mod package.
-If the mod package doesn't contain a "nitmod" folder:
-Upload the content of the mod package to your server's "nitmod" folder
-If the mod package contains a "nitmod" folder:
-Upload the content of the package's "nitmod" folder to your server's "nitmod" folder
-In both cases, you will probably have to confirm you want to replace qagame_mp_x86.dll (Windows servers) or qagame.mp.i386.so (Linux servers).
-Once the files are uploaded:
-Start your server
-
-Server configuration
+## Server configuration
 
 N!tmod releases come with a sample configuration file (nitmod.cfg).
 It contains every mod Cvars set to their default value, and a small description of what they're used for.
