@@ -70,15 +70,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Installation',
               to: '/docs/intro',
             },
-          ],
-          title: 'Forums',
-          items: [
             {
-              label: 'Tutorial',
-              to: 'https://etmods.net/forums',
+              label: 'Cvar reference',
+              to: '/docs/intro',
+            },
+            {
+              label: 'NxAC',
+              to: '/docs/intro',
             },
           ],
         },
@@ -86,12 +87,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
+              label: 'Forums',
+              href: 'https://etmods.net/forums',
             },
             {
               label: 'Discord',
               href: 'https://discord.gg/UHBpfFMHSX',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
             },
           ],
         },
@@ -101,10 +106,6 @@ module.exports = {
             {
               label: 'Blog',
               to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
