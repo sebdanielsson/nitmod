@@ -69,15 +69,15 @@ module.exports = {
           items: [
             {
               label: 'Installation',
-              to: '/docs/intro',
+              to: '/docs/installation',
             },
             {
               label: 'Cvar reference',
-              to: '/docs/intro',
+              to: '/docs/cvar-reference',
             },
             {
               label: 'NxAC',
-              to: '/docs/intro',
+              to: '/docs/nxac',
             },
           ],
         },

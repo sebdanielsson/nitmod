@@ -25,9 +25,22 @@
   
 }
 
-.navbar__link:hover, .navbar__link--active {
-  color: #aa0000;
+html[data-theme='dark'] .navbar__link, html[data-theme='dark'] .menu__link, .footer__link-item:hover {
+  color: #CA1111;
   text-decoration: none;
+}
+
+html[data-theme='dark'] .navbar__link--active, html[data-theme='dark'] .menu__link--active, html[data-theme='dark'] .menu__link:hover, html[data-theme='dark'] .navbar__link:hover {
+  color: #F5F6F7;
+}
+
+html[data-theme='light'] .navbar__link, html[data-theme='light'] .menu__link {
+  color: #CA1111;
+  text-decoration: none;
+}
+
+html[data-theme='light'] .navbar__link--active, html[data-theme='light'] .menu__link--active, html[data-theme='light'] .menu__link:hover, html[data-theme='light'] .navbar__link:hover {
+  color: #000000;
 }
 
 .navbar__title {
