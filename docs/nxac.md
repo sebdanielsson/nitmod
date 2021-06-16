@@ -18,11 +18,11 @@ Every violations will also be logged into the "NxAC/NxAC_Violations.log" file.
 It is possible to modify the behaviour, as described below.
 
 ### Customization
-If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the n_NxAC to 1 in your server config.
-If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the n_NxAC to 2 in your server config.
+If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_NxAC) to 1 in your server config.
+If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_NxAC) to 2 in your server config.
 This is a latched cvar, which means you will have to restart the map, or wait for the next map before changes take effect.
 Once this cvar is enabled, NxAC server will automatically take actions when it detects an AntiCheat violation.
-If the n_NxAC cvar is set to 0, it will ONLY broadcast the AntiCheat violation announce to everyone on the server, and the server will NOT be listed as a "cheat protected" server.
+If the [n_NxAC](cvar-reference#n_NxAC) cvar is set to 0, it will ONLY broadcast the AntiCheat violation announce to everyone on the server, and the server will NOT be listed as a "cheat protected" server.
 
 Automatic kick for these violations:
 * "UNKNOWN_CLIENT_BINARY" - NxAC has detected that this player is using an ET client that is not allowed on the server, because its SHA1 checksum wasn't found inside the "NxAC/checksums.cfg" file.
@@ -39,11 +39,11 @@ NxAC can scan clients to find CVARS that should not be registered in the game (u
 To enable this feature, you must install a list of cvar rules on the server, and enable some cvars in your server config.
 
 Server config
-* n_NxAC_CvarScan: Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")
-* n_NxAC_CvarScanWait: Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")
-* n_NxAC_CvarScanDelay: Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")
-* n_NxAC_CvarScanInterval: Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")
-* n_NxAC_CvarScanMaxWarnings: Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")
+* [n_NxAC_CvarScan](cvar-reference#n_NxAC_CvarScan): Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")
+* [n_NxAC_CvarScanWait](cvar-reference#n_NxAC_CvarScanWait): Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")
+* [n_NxAC_CvarScanDelay](cvar-reference#n_NxAC_CvarScanDelay): Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")
+* [n_NxAC_CvarScanInterval](cvar-reference#n_NxAC_CvarScanInterval): Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")
+* [n_NxAC_CvarScanMaxWarnings](cvar-reference#n_NxAC_CvarScanMaxWarnings): Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")
 
 The syntax for a CVAR Scanner depends of what type of rule is used, and can look like:
 * CVARNAME RULE VALUE (EQ, G, L, INC and EXC rules)
@@ -73,7 +73,7 @@ NxAC can check client's game SHA1 checksum to disallow unknown/self compiled ET 
 To enable this feature, you must install a list of allowed SHA1 checksums on the server, and enable a cvar in your server config.
 
 ### Server config
-n_NxAC_CheckClientBinary: Set this CVAR to 1 to enable NxAC Client Checksum verification (Default: "0")
+[n_NxAC_CheckClientBinary](cvar-reference#n_NxAC_CheckClientBinary): Set this CVAR to 1 to enable NxAC Client Checksum verification (Default: "0")
 
 ### How to create the allowed SHA1 checksums list?
 Our official sample cvar rules list can be downloaded here
