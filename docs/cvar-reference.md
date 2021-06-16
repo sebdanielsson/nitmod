@@ -406,7 +406,7 @@ Default: 0
 Log file name when server crash
 Default: crash.log
 
-n_LogCurrentTime
+#### n_LogCurrentTime
 If enabled, real time will be printed in logs instead of server uptime.
 Default: 0
 
@@ -1175,7 +1175,7 @@ Enable a War Mode
 Default: 0
 Note: The value of this cvar will be modified when using !panzerwar and !sniperwar commands.
 
-n_sniperWarOptions
+#### n_sniperWarOptions
 Bitflag to control some SniperWar options
 1 : Players will spawn with binoculars
 2 : Scoped headshots instagib the target
@@ -1421,7 +1421,7 @@ Players can always move spec without any delay if they are currently in Axis or 
 Set to 0 to disable.
 Default: 0
 
-n_SQLiteDBPath
+#### n_SQLiteDBPath
 Absolute path to the SQLite database file.
 Must include filename (ex: C:\nitmod.sqlite) !!
 Database file will automaticly be created.
@@ -1429,7 +1429,7 @@ Admin System, XPSave, Mails and Map Records will be unavailable if this cvar is 
 Errors will be printed in the server console and written to logs (if logging is enabled). This can help us solving your problems.
 Default: ""
 
-n_UserDBSync
+#### n_UserDBSync
 For use with multiple servers on a single SQLite DB.
 If enabled, server will re-load the user from database when he connects to avoid data loss.
 If the DB is used by a single server, set it to 0 to avoid useless ressources usage.
@@ -1437,7 +1437,7 @@ If the DB is used by a single server, set it to 0 to avoid useless ressources us
 1 : Enable
 Default: 0
 
-n_userMail
+#### n_userMail
 If enabled, players will be allowed to send "mails" to offline players.
 This feature can be useful if a player needs to contact a server admin but isn't connected at the same time.
 0 : Disable
@@ -1445,14 +1445,14 @@ This feature can be useful if a player needs to contact a server admin but isn't
 Default: 1
 Note: Requires a valid SQLite database! See n_SQLiteDBPath
 
-n_mapRecords
+#### n_mapRecords
 Enable/Disable Map Spree Records and Map Frag Records
 0 : Disable
 1 : Enable
 Default: 1
 Note: Requires a valid SQLite database! See n_SQLiteDBPath
 
-n_proneDelay
+#### n_proneDelay
 Options to modify the way player proning works
 0 : No spread change, players can't stand up for 750 milliseconds (normal behavior)
 1 : Maximum spread for 1 second after proning, players can't stand up for 1750 milliseconds (ETPro b_proneDelay 1 behavior)
@@ -1460,7 +1460,7 @@ Options to modify the way player proning works
 3 : No spread change, players can't stand up for 1750 milliseconds (New)
 Default: 0
 
-n_dynamiteTimer
+#### n_dynamiteTimer
 Sets how many milliseconds it takes to a dynamite to explode after it has been armed.
 Default: 30000
 Note: If set lower than 5000, or higher than 60000, default value is used.
@@ -1477,12 +1477,12 @@ Default: 0
 Sets the number of medpacks a Medic drops when killed.
 Default: 0
 
-n_ammoPackSinkDelay
+#### n_ammoPackSinkDelay
 Delay (in milliseconds) before dropped ammopacks disappear.
 Default: 30000
 Note: If set lower than 5000, or higher than 60000, default value is used.
 
-n_medPackSinkDelay
+#### n_medPackSinkDelay
 Delay (in milliseconds) before dropped medpacks disappear.
 Default: 30000
 Note: If set lower than 5000, or higher than 60000, default value is used.
@@ -1505,42 +1505,42 @@ Default: 1
 If set higher than 0, players can drop the objective *value+1* times per life, using "dropobj" command (can be used in console or bound to a key).
 Default: 0
 
-n_allowDropWeapon
+#### n_allowDropWeapon
 If enabled, players can drop their primary weapon to the floor using "dropweapon" command (can be used in console or bound to a key).
 0 : Disable
 1 : Enable
 Default: 0
 
-n_preciseLandmineTrigger
+#### n_preciseLandmineTrigger
 If enabled, player bounding box has to be inside the landmine bounding box to trigger it, instead of calculating the distance between the landmine and the player.
 0 : Disable
 1 : Enable
 Default: 0
 
-n_crazyGravity
+#### n_crazyGravity
 Toggle Crazy Gravity (Automaticly set to 0 on map end)
 0 : Disable
 1 : Enable
 Default: 0
 
-n_crazyGravityMin
+#### n_crazyGravityMin
 Minimum gravity value when Crazy Gravity is enabled.
 Default: 100
 
-n_crazyGravityMax
+#### n_crazyGravityMax
 Maximum gravity value when Crazy Gravity is enabled.
 Default: 2000
 
-n_crazyGravityInterval
+#### n_crazyGravityInterval
 Delay, in milliseconds, between gravity changes when Crazy Gravity is enabled.
 Default: 30000
 
-n_minNameLength
+#### n_minNameLength
 If set higher than 0, minimum length of player names when they connect.
 Default: 0
 Note: Since 2.2.1, checks for visible characters only (spaces and color codes are ignored)
 
-n_reviveSpreeOptions
+#### n_reviveSpreeOptions
 Bitflag to control revive spree options.
 0 : Disable revive sprees
 1 : Enable revive sprees
@@ -1550,30 +1550,30 @@ Bitflag to control revive spree options.
 16 : Count syringe heals for multi revives
 Default: 1
 
-n_multiReviveTime
+#### n_multiReviveTime
 Maximum delay, in milliseconds, between two revives, to count as a multi revive.
 Hardcoded multirevive sound path on client side: sound/nit/mr1.wav, sound/nit/mr2.wav, sound/nit/mr3.wav, sound/nit/mr4.wav
 These sounds are not provided into the official PK3 because we have no sounds for them, it's optional.
 If you want to use your own sounds, add them into a custom pk3 using the above paths.
 Default: 2000
 
-n_tankMountDelay
+#### n_tankMountDelay
 Delay in SECONDS a player must wait before he can re-mount a tank. Set to 0 to disable this delay.
 Default: 0
 
-n_crouchStandDelay
+#### n_crouchStandDelay
 Delay in MILLISECONDS a player must wait before he can stand up after crouching. Set to 0 to disable this delay.
 Default: 0
 
-n_standCrouchDelay
+#### n_standCrouchDelay
 Delay in MILLISECONDS a player must wait after crouching and standing up to crouch again. Set to 0 to disable this delay.
 Default: 0
 
-n_noSkillUpgrades
+#### n_noSkillUpgrades
 If enabled, players can still score XP but their skill levels will be locked to 0 (Same as ETPro's b_noskillupgrades).
 Default: 0
 
-n_killAssistances
+#### n_killAssistances
 Bitflag to toggle kill assistances.
 An announce will appear on your screen if you inflicted damage to a player but someone else kills him.
 Players will get +1XP if inflicted damage is lower than 50, +2XP if higher.
@@ -1585,7 +1585,7 @@ TeamKill assistances causes 1 or 2 XP loss depending on damage.
 4 : Enable TeamKill Assistances
 Default: 1
 
-n_greetingPos
+#### n_greetingPos
 Controls where greeting are displayed.
 0 : Chat
 1 : Center of the screen
@@ -1594,42 +1594,42 @@ Controls where greeting are displayed.
 4 : Console only
 Default: 0
 
-n_voteMaxTimelimit
+#### n_voteMaxTimelimit
 If set higher than 0, this caps the maxmim timelimit vote value (Higher values will be capped to this maximum value).
 Default: 0
 
-n_classesMaxHP
+#### n_classesMaxHP
 Allows setting max HP for each classes. Values must be space separated.
 Classes, in order, are: Soldier, Medic, Engineer, FieldOps, CovertOps.
 Example: value "120 150 140 110 130" means: Soldiers 120 HP Max, Medics 150 HP Max, Engineers 140 HP Max, FieldOps 110 HP Max, CovertOps 130 HP Max
 Setting one of the values to 0 will use the usual max HP value for that class.
 Default: 0 0 0 0 0
 
-n_NxAC_CvarScan
+#### n_NxAC_CvarScan
 Set this CVAR to 1 to enable NxAC CVAR Scanner.
 Default: 0
 
-n_NxAC_CvarScanWait
+#### n_NxAC_CvarScanWait
 Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting.
 Default: 10000
 
-n_NxAC_CvarScanDelay
+#### n_NxAC_CvarScanDelay
 Delay in milliseconds between each cvar query. Values too low might cause lags or server command overflow.
 Default: 750
 
-n_NxAC_CvarScanInterval
+#### n_NxAC_CvarScanInterval
 Delay in milliseconds before starting a new scan after the previous one has finished.
 Default: 30000
 
-n_NxAC_CvarScanMaxWarnings
+#### n_NxAC_CvarScanMaxWarnings
 Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0.
 Default: 1
 
-n_NxAC_CheckClientBinary
+#### n_NxAC_CheckClientBinary
 Set this CVAR to 1 to enable NxAC Client Checksum verification.
 Default: 0
 
-n_NxAC
+#### n_NxAC
 Controls actions taken by NxAC when a cheat violation is detected.
 See NxAC Setup tutorial for further informations.
 0 : Log and report violation to everyone on the server.
