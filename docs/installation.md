@@ -20,11 +20,9 @@ sidebar_position: 2
 
 N!tmod releases come with a sample configuration file (nitmod.cfg).
 It contains every mod Cvars set to their default value, and a small description of what they're used for.
-For a complete description, visit our Cvar reference (link on the left menu of this page).
+For a complete description, visit our [Cvar Reference](cvar-reference).
 
-### Admin system configuration
-
-#### Setting up SQLite Database
+### Setting up SQLite Database
 
 N!tmod includes a powerful Shrubbot like admin system, partially rewritten to use a SQLite database, extend features and provide higher performance.
 It allows you to modify/add/delete admin levels and manage every player who has connected to your server, even whey they are offline
@@ -32,11 +30,11 @@ It allows you to modify/add/delete admin levels and manage every player who has 
 Admin system is disabled by default, because it requires you to set the path to where you want the SQLite database file to be saved, using the n_SQLiteDBPath Cvar.
 The database file will be automaticly created if the above cvar is set correctly, and the server process has read/write permissions on the specified path.
 If an invalid filename is provided, the mod will attempt to create a "NITMOD_DB.sqlite" database inside "fs_homepath"/nitmod directory.
-The SQLite database is also required for XPSave (see g_XPSave), Offline messaging (see n_userMail) and Map records (see n_mapRecords)
+The SQLite database is also required for XPSave [see g_XPSave](cvar_reference####g_XPSave), Offline messaging (see n_userMail) and Map records (see n_mapRecords)
 
-#### Setting up admin levels
+### Admin levels
 
-To setup admin levels on your server, you must create a levels.db file inside nitmod folder (download sample here).
+To setup admin levels on your server, you must create a levels.db file inside nitmod folder [levels-sample.db](download sample here).
 DO NOT copy & paste level entries from another mod's 'shrubbot.cfg' file, it will NOT work!
 
 Here is 'levels.db' file structure description:
@@ -52,10 +50,10 @@ The file will automaticly be overwritten when using one of these commands.
 If you manually edit this file while the server is running, use !readconfig command to load modifications.
 Use !levlist and !levinfo commands to display informations about existing levels.
 
-#### Setting up custom commands
+### Custom commands
 
 N!tmod allows adding custom commands to the existing admin system commands set.
-To setup custom commands on your server, you must create a commands.db file inside nitmod folder (download sample here).
+To setup custom commands on your server, you must create a commands.db file inside nitmod folder [commands-sample.db](download sample here).
 DO NOT copy & paste custom commands from another mod's 'shrubbot.cfg' file, it will NOT work!
 
 Here is 'commands.db' file structure description:
@@ -67,7 +65,7 @@ levels =    // Levels having access to this command, delimited by spaces (ex: 0 
 
 If you manually edit this file while the server is running, use !readconfig command to load modifications.
 
-#### Setting up custom votes
+### Custom votes
 
 Starting from version 2.2, server admins can create custom votes.
 To add custom votes, you must create a votes.db file inside nitmod folder
@@ -77,7 +75,7 @@ Here is 'votes.db' file structure description (N!tmod 2.2):
 name =     // max 20 chars vote name (to use with /callvote)
 cmd =      // max 100 chars command to execute on server side when vote passes
 message =  // max 256 chars message displayed on clients when vote is called
-download sample here
+[votes-sample-2-2.db](linktosample)
 
 Starting from N!tmod 2.3, the votes.db syntax has been modified, adding more flexibility.
 Here is 'votes.db' file structure description (N!tmod 2.3 and higher)
@@ -88,7 +86,7 @@ help =      // max 256 chars vote description (ex: /callvote *name* ?)
 exec =      // max 1024 chars command to execute on server side when vote passes
 passtext =  // max 256 chars message displayed on clients if vote passes
 levels =    // max 64 levels allowed to call this vote (if empty, vote is available for all levels)
-download sample here
+[votes-sample-2-3.db](linktosample)
 
 If you manually edit this file while the server is running, use !readconfig command to load modifications.
 
