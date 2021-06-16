@@ -39,12 +39,11 @@ NxAC can scan clients to find CVARS that should not be registered in the game (u
 To enable this feature, you must install a list of cvar rules on the server, and enable some cvars in your server config.
 
 Server config
-n_NxAC_CvarScan: Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")
-
-n_NxAC_CvarScanWait: Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")
-n_NxAC_CvarScanDelay: Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")
-n_NxAC_CvarScanInterval: Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")
-n_NxAC_CvarScanMaxWarnings: Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")
+* n_NxAC_CvarScan: Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")
+* n_NxAC_CvarScanWait: Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")
+* n_NxAC_CvarScanDelay: Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")
+* n_NxAC_CvarScanInterval: Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")
+* n_NxAC_CvarScanMaxWarnings: Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")
 
 The syntax for a CVAR Scanner depends of what type of rule is used, and can look like:
 * CVARNAME RULE VALUE (EQ, G, L, INC and EXC rules)
