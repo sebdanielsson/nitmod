@@ -30,7 +30,7 @@ It allows you to modify/add/delete admin levels and manage every player who has 
 Admin system is disabled by default, because it requires you to set the path to where you want the SQLite database file to be saved, using the n_SQLiteDBPath Cvar.
 The database file will be automaticly created if the above cvar is set correctly, and the server process has read/write permissions on the specified path.
 If an invalid filename is provided, the mod will attempt to create a "NITMOD_DB.sqlite" database inside "fs_homepath"/nitmod directory.
-The SQLite database is also required for XPSave [see g_XPSave](cvar-reference####g_XPSave), Offline messaging (see n_userMail) and Map records (see n_mapRecords)
+The SQLite database is also required for XPSave [see g_XPSave](cvar-reference#g_xpsave), Offline messaging (see n_userMail) and Map records (see n_mapRecords)
 cvar_reference####g_XPSave
 
 ### Admin levels
