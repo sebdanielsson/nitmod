@@ -13,13 +13,13 @@ Default: 1
 ---
 
 #### g_lms_roundlimit
-sets the maximum number of rounds for a single matchup between teams. A team is considered to win a match when more than 50% of num rounds are won.  
+Sets the maximum number of rounds for a single matchup between teams. A team is considered to win a match when more than 50% of num rounds are won.  
 Default: 3  
 
 ---
 
 #### g_lms_matchlimit
-sets the maximum number of matches to play before moving on to the next map in rotation.  
+Sets the maximum number of matches to play before moving on to the next map in rotation.  
 Default: 2  
 
 ---
@@ -55,7 +55,7 @@ Default: ""
 ---
 
 #### g_mapConfigs
-allows you to execute a custom config file for each map. When set, it specifies the name of the folder inside your server's nitmod directory. The config file for a map has to be named the same as the map with the extension .cfg, for instance oasis.cfg. You should also create a default.cfg file which will be read before the map-specific config files.  
+Allows you to execute a custom config file for each map. When set, it specifies the name of the folder inside your server's nitmod directory. The config file for a map has to be named the same as the map with the extension .cfg, for instance oasis.cfg. You should also create a default.cfg file which will be read before the map-specific config files.  
 Default: ""  
 
 ---
