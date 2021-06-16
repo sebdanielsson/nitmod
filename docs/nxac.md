@@ -31,7 +31,7 @@ These violations will only trigger a public announce:
 * "SCREENSHOT FAILURE" - A screenshot request has been sent to this player, and it failed.
 
 ### CVAR Scanner
-NxAC can scan clients to find CVARS that should not be registered in the game (usually known cheat cvars) or find CVARS with bad values.
+NxAC can scan clients to find cvars that should not be registered in the game (usually known cheat cvars) or find CVARS with bad values.
 To enable this feature, you must install a list of cvar rules on the server, and enable some cvars in your server config.
 
 #### Options
@@ -41,12 +41,14 @@ To enable this feature, you must install a list of cvar rules on the server, and
 [n_NxAC_CvarScanInterval](cvar-reference#n_NxAC_CvarScanInterval): Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")  
 [n_NxAC_CvarScanMaxWarnings](cvar-reference#n_NxAC_CvarScanMaxWarnings): Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")  
 
-The syntax for a CVAR Scanner depends of what type of rule is used, and can look like:  
+#### Rules
+
+The syntax for a CVAR Scanner depends of what type of rule is used, and can look like:
+
 CVARNAME RULE VALUE (EQ, G, L, INC and EXC rules)  
 CVARNAME RULE VALUE1 VALUE2 (IN, OUT, GE and LE rules)  
 CVARNAME RULE (NULL rule)  
 
-The CVAR scanner supports these rules:
 * EQ "val": Cvar value must be EQUAL to val
 * IN "val1" "val2": Cvar value must be INSIDE val1 and val2
 * OUT "val1" "val2": Cvar value must be OUTSIDE val1 and val2
