@@ -18,11 +18,11 @@ Every violations will also be logged into the "NxAC/NxAC_Violations.log" file.
 It is possible to modify the behaviour, as described below.
 
 ### Customization
-If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_NxAC) to 1 in your server config.
-If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_NxAC) to 2 in your server config.
+If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 1 in your server config.
+If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 2 in your server config.
 This is a latched cvar, which means you will have to restart the map, or wait for the next map before changes take effect.
 Once this cvar is enabled, NxAC server will automatically take actions when it detects an AntiCheat violation.
-If the [n_NxAC](cvar-reference#n_NxAC) cvar is set to 0, it will ONLY broadcast the AntiCheat violation announce to everyone on the server, and the server will NOT be listed as a "cheat protected" server.
+If the [n_NxAC](cvar-reference#n_nxac) cvar is set to 0, it will ONLY broadcast the AntiCheat violation announce to everyone on the server, and the server will NOT be listed as a "cheat protected" server.
 
 Automatic kick for these violations:
 * "UNKNOWN_CLIENT_BINARY" - NxAC has detected that this player is using an ET client that is not allowed on the server, because its SHA1 checksum wasn't found inside the "NxAC/checksums.cfg" file.
