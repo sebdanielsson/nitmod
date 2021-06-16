@@ -49,6 +49,7 @@ The syntax for a CVAR Scanner depends of what type of rule is used, and can look
 * CVARNAME RULE VALUE (EQ, G, L, INC and EXC rules)
 * CVARNAME RULE VALUE1 VALUE2 (IN, OUT, GE and LE rules)
 * CVARNAME RULE (NULL rule)
+
 The CVAR scanner supports these rules:
 * EQ "val": Cvar value must be EQUAL to val
 * IN "val1" "val2": Cvar value must be INSIDE val1 and val2
