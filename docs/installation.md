@@ -76,7 +76,7 @@ Here is 'votes.db' file structure description (N!tmod 2.2):
 name =     // max 20 chars vote name (to use with /callvote)
 cmd =      // max 100 chars command to execute on server side when vote passes
 message =  // max 256 chars message displayed on clients when vote is called
-[votes-sample-2-2.db](linktosample)
+[votes-sample-2-2.db](installation)
 
 Starting from N!tmod 2.3, the votes.db syntax has been modified, adding more flexibility.
 Here is 'votes.db' file structure description (N!tmod 2.3 and higher)
@@ -87,7 +87,7 @@ help =      // max 256 chars vote description (ex: /callvote *name* ?)
 exec =      // max 1024 chars command to execute on server side when vote passes
 passtext =  // max 256 chars message displayed on clients if vote passes
 levels =    // max 64 levels allowed to call this vote (if empty, vote is available for all levels)
-[votes-sample-2-3.db](linktosample)
+[votes-sample-2-3.db](installation)
 
 If you manually edit this file while the server is running, use !readconfig command to load modifications.
 
