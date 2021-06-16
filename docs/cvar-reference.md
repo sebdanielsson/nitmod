@@ -4,8 +4,6 @@ sidebar_position: 3
 
 # Cvar Reference
 
----
-
 #### g_lms_teamForceBalance
 Controls whether the game will prevent new players from joining the team with more players than the other  
 0 : Disable  
@@ -2161,3 +2159,5 @@ Toggle friendly artillery zone hints (can also be dissabled on client side with 
 0 : Disable  
 1 : Enable  
 Default: 1  
+
+---
