@@ -24,7 +24,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'introduction',
+          docId: 'installation',
           position: 'left',
           label: 'Docs',
         },
