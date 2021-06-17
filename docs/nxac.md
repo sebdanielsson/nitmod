@@ -65,14 +65,3 @@ It is recommended to search for known hack cvars only. We do not recommend scann
 If you want to restrict "normal" cvars, you should use N!tmod's forcecvar and sv_cvar features instead.
 
 Here is a [cvarlist-sample.cfg](http://etmods.net/NxAC/cvarlist.cfg). The cvarlist should be saved as `nitmod/NxAC/cvarlist.cfg`.
-
-### Client Checksum verification
-NxAC can verify a game client's checksum and disallow unknown or self-compiled game clients.
-
-#### Enable Client Checksum verification
-* Set the cvar [n_NxAC_CheckClientBinary](cvar-reference#n_nxac_checkclientbinary) to 1 (Default: 0)
-
-* Provide a list of known checksums at `nitmod/NxAC/checksums.cfg`  
-Here is a [checksums-sample.cfg](http://etmods.net/NxAC/checksums.cfg)
-
-The checksum list will be continuously updated as new versions of ET: Legacy are released. You can add more entries by generating a SHA-1 checksum of ET.exe or etl.exe (ET: Legacy) and adding one checksum per line.
