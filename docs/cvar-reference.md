@@ -1300,9 +1300,6 @@ Default: 1
 #### g_countryflags
 Enable/Disable country flags system.  
 You need a valid GeoIP.dat in the nitmod path of your server.  
-This file can be downloaded at  
-http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz  
-and must be unzipped in the 'nitmod' path of your server.  
 In case of problems, check your logfiles for lines with the "GeoIP" prefix.  
 0 : Disable  
 1 : Enable  

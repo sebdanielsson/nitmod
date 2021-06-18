@@ -14,7 +14,7 @@ Every violation will be logged into the `nitmod/NxAC/NxAC_Violations.log` file.
 
 ### Enable NxAC
 If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 1 in your server config.  
-If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 2 in your server config.
+If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 2 in your server config.  
 
 This is a latched cvar, which means you will have to restart the map, or wait for the next map, before changes take effect.
 Once this cvar is enabled, NxAC server will automatically take actions when it detects a violation.
@@ -64,4 +64,4 @@ CVARNAME RULE (NULL rule)
 It is recommended to search for known hack cvars only. We do not recommend scanning for engine cvars or other original game cvars (r_*, cl_*, cg_*, in_* etc...).
 If you want to restrict "normal" cvars, you should use N!tmod's forcecvar and sv_cvar features instead.
 
-Here is a [cvarlist-sample.cfg](http://etmods.net/NxAC/cvarlist.cfg). The cvarlist should be saved as `nitmod/NxAC/cvarlist.cfg`.
+Here is a [cvarlist-sample.cfg](examples/cvarlist-sample.cfg). The cvarlist should be saved as `nitmod/NxAC/cvarlist.cfg`.

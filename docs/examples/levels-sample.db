@@ -1,0 +1,23 @@
+**********
+
+level = 0
+name = Guest
+flags =  time listplayers records help gibme admintest news uptime about
+gtext = Welcome to the guest [n]!
+gsound = 
+
+**********
+
+level = 1
+name = Server Moderator
+flags = time listplayers records help gibme admintest spec999 news pip pop pants uptime about stats put ban banguid
+gtext = Welcome to the administrator [n]!
+gsound = 
+
+**********
+
+level = 2
+name = Server Master
+flags = all
+gtext = Welcome to the master [n]!
+gsound = 
