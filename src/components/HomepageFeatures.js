@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Admin system',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Img: require('../../static/img/roles.webp').default,
     description: (
       <>
         N!tmod includes a powerful Shrubbot-like admin system which let's you set up server roles and memberships.
@@ -14,29 +14,29 @@ const FeatureList = [
   },
   {
     title: 'Custom commands',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Img: require('../../static/img/doublejump.webp').default,
     description: (
       <>
-        N!tmod allows adding custom commands to the existing admin system commands set.
+        N!tmod enables you to customize plenty of game options, including features such as doublejump and adding new weapons.
       </>
     ),
   },
   {
     title: 'XP Save',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Img: require('../../static/img/xpsave.webp').default,
     description: (
       <>
-        N!tmod let's you configure XP Save. You can customize save duration, which how much XP is required for each level and auto XP reset.
+        N!tmod let's you configure XP Save with options for save duration, XP required for each level and automatic XP reset.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img className={styles.featureImg} src={Img} alt="{title}"/>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
