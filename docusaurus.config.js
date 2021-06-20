@@ -55,7 +55,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://etmods.net/donate',
+          href: 'https://www.paypal.com/donate?token=f_hY-YI0imkFarRsg7IouAp4SktL2zRMzD3_slsWKiwAX6zCsNXzX3lGLIV93zJRuO8Sn-1PQNh7KWgc',
           label: 'Donate',
           position: 'right',
         },
@@ -90,7 +90,7 @@ module.exports = {
             },
             {
               label: 'Forums',
-              href: 'https://etmods.net/forums',
+              href: 'http://etmods.net/forums',
             },
             {
               label: 'GitHub',
@@ -115,7 +115,7 @@ module.exports = {
             },
             {
               label: 'Donate',
-              to: 'https://etmods.net/donate',
+              to: 'https://www.paypal.com/donate?token=f_hY-YI0imkFarRsg7IouAp4SktL2zRMzD3_slsWKiwAX6zCsNXzX3lGLIV93zJRuO8Sn-1PQNh7KWgc',
             },
           ],
         },
