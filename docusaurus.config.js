@@ -39,13 +39,14 @@ module.exports = {
           label: 'Bug Tracker',
           position: 'left',
         },
+        {to: '/servers', label: 'Servers', position: 'right'},
         {
           href: 'https://discord.gg/UHBpfFMHSX',
           label: 'Discord',
           position: 'right',
         },
         {
-          href: 'http://etmods.net/forums',
+          href: 'https://forums.etmods.net',
           label: 'Forums',
           position: 'right',
         },
@@ -85,12 +86,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'Servers',
+              href: 'servers',
+            },
+            {
               label: 'Discord',
               href: 'https://discord.gg/UHBpfFMHSX',
             },
             {
               label: 'Forums',
-              href: 'http://etmods.net/forums',
+              href: 'https://forums.etmods.net',
             },
             {
               label: 'GitHub',
