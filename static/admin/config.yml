@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sebdanielsson/nitmod-docusaurus
   branch: main
-  base_url: https://nitmod-docusaurus.vercel.app
+  base_url: https://netlify-cms-oauth-ox6o.vercel.app
 media_folder: "static/img"
 collections:
   - name: 'docs'
