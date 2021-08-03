@@ -7,9 +7,9 @@ collections:
     label: 'Docs'
     label_singular: 'Doc'
     folder: 'docs'
-    path: '{{menu}}/{{id}}'
+    path: '{{menu}}/{{slug}}'
     create: true
-    slug: '{{id}}'
+    slug: '{{slug}}'
     identifier_field: 'title'
     extension: 'md'
     format: 'frontmatter'
@@ -18,7 +18,7 @@ collections:
     fields:
       # - name: 'menu'
       #   label: 'Menu'
-      - { label: 'Slug', name: 'id', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
       - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
@@ -55,16 +55,16 @@ collections:
     label: 'Pages'
     label_singular: 'Page'
     folder: 'src/pages'
-    path: '{{id}}'
+    path: '{{slug}}'
     create: true
-    slug: '{{id}}'
+    slug: '{{slug}}'
     identifier_field: 'title'
     extension: 'js'
     format: 'frontmatter'
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'id', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
