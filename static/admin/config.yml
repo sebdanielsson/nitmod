@@ -55,9 +55,9 @@ collections:
     label: 'Pages'
     label_singular: 'Page'
     folder: 'src/pages'
-    path: '{{slug}}'
+    path: '{{id}}'
     create: true
-    slug: '{{slug}}'
+    slug: '{{id}}'
     identifier_field: '{{id}}'
     extension: 'js'
     format: 'frontmatter'
