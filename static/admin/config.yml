@@ -10,7 +10,7 @@ collections:
     path: '{{menu}}/{{slug}}'
     create: true
     slug: '{{slug}}'
-    identifier_field: 'title'
+    identifier_field: '{{id}}'
     extension: 'md'
     format: 'frontmatter'
     editor:
@@ -58,7 +58,7 @@ collections:
     path: '{{slug}}'
     create: true
     slug: '{{slug}}'
-    identifier_field: 'title'
+    identifier_field: '{{id}}'
     extension: 'js'
     format: 'frontmatter'
     editor:
