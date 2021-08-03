@@ -59,7 +59,9 @@ collections:
     create: true
     slug: '{{slug}}'
     identifier_field: '{{id}}'
-    extension: 'js'
+    extension:
+      - js
+      - md
     format: 'frontmatter'
     editor:
       preview: false
