@@ -1,3 +1,8 @@
+---
+slug: servers
+title: Servers
+hide_table_of_contents: true
+---
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
