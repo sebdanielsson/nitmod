@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
@@ -27,8 +28,31 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
+  // Add Netlify Identity script
+  if (typeof window !== "undefined") {
+    // browser code
+    const document = window.document;
+    let script = document.createElement("script");
+    script.innerHTML = `
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    `;
+  document.head.appendChild(script);
+  }
+
   return (
     <Layout>
+      <Head>
+         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+       </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
