@@ -1,5 +1,9 @@
 ---
 sidebar_position: 4
+id: nxac
+title: NxAC
+hide_title: false
+hide_table_of_contents: false
 ---
 
 # NxAC
