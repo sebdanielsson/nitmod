@@ -31,14 +31,14 @@ collections:
     label: 'Blog'
     folder: 'blog'
     create: true
-    slug: '{{date}}-{{id}}'
+    slug: '{{date}}-{{slug}}'
     identifier_field: 'title'
     extension: 'md'
     format: 'frontmatter'
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'id', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', required: false }
       - { label: 'Author Title', name: 'author_title', widget: 'string', required: false }
