@@ -1,5 +1,8 @@
 ---
+id: markdown-page
 title: Markdown page example
+description: " "
+hide_table_of_contents: true
 ---
 
 # Markdown page example
