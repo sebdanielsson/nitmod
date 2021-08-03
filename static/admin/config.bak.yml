@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  branch: main
-media_folder: 'static/img'
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'assets/uploads'
 collections:
   - name: 'docs'
     label: 'Docs'
@@ -16,6 +16,8 @@ collections:
     editor:
       preview: false
     fields:
+      # - name: 'menu'
+      #   label: 'Menu'
       - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
@@ -36,7 +38,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', required: false }
       - { label: 'Author Title', name: 'author_title', widget: 'string', required: false }
@@ -45,7 +47,7 @@ collections:
       - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
       - { label: 'Tags', name: 'tags', widget: 'list', default: [], required: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
-      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD', time_format: false }
+      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD', timeFormat: false }
       - { label: 'Description', name: 'description', required: false }
       - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -65,5 +67,4 @@ collections:
       - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', required: false }
-      - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }

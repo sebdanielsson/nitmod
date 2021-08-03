@@ -1,6 +1,7 @@
 ---
-slug: servers
+id: servers
 title: Servers
+description: ''
 hide_table_of_contents: true
 ---
 import React from 'react';
