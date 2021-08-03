@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+id: cvar-reference
+title: Cvar Reference
+hide_title: false
+hide_table_of_contents: false
 ---
 
 # Cvar Reference
