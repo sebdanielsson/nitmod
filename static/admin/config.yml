@@ -29,7 +29,7 @@ collections:
     label: 'Blog'
     folder: 'blog'
     create: true
-    slug: '{{date}}-{{id}}'
+    slug: '{{date}}-{{slug}}'
     identifier_field: 'title'
     extension: 'md'
     format: 'frontmatter'
