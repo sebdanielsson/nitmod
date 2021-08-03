@@ -7,10 +7,10 @@ collections:
     label: 'Docs'
     label_singular: 'Doc'
     folder: 'docs'
-    path: '{{menu}}/{{slug}}'
+    path: '{{menu}}/{{id}}'
     create: true
-    slug: '{{slug}}'
-    identifier_field: '{{id}}'
+    slug: '{{id}}'
+    identifier_field: 'title'
     extension: 'md'
     format: 'frontmatter'
     editor:
@@ -18,7 +18,7 @@ collections:
     fields:
       # - name: 'menu'
       #   label: 'Menu'
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
       - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
