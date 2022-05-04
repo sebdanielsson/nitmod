@@ -6,9 +6,8 @@ hide_title: false
 hide_table_of_contents: false
 ---
 
-# NxAC
-
 ## What is NxAC?
+
 NxAC is N!tmod's anti-cheat tool and was officially released in version 2.3. It's built-in to the mod and just needs to be configured.
 
 By default, NxAC will automatically report violations to everyone on the server, request a screenshot and kick/ban the cheater.
@@ -17,6 +16,7 @@ Every violation will be logged into the `nitmod/NxAC/NxAC_Violations.log` file.
 ## Configuration
 
 ### Enable NxAC
+
 If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 1 in your server config.  
 If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 2 in your server config.  
 
@@ -24,7 +24,8 @@ This is a latched cvar, which means you will have to restart the map, or wait fo
 Once this cvar is enabled, NxAC server will automatically take actions when it detects a violation.
 If the [n_NxAC](cvar-reference#n_nxac) cvar is set to 0, it will ONLY broadcast the violation to everyone on the server and the server will NOT be listed as a "cheat protected" server.
 
-#### Automatic kick violations:
+#### Automatic kick violations
+
 * "UNKNOWN_CLIENT_BINARY" - NxAC has detected that this player is using an ET client that is not allowed on the server, because its SHA1 checksum wasn't found inside the "NxAC/checksums.cfg" file.
 * "SUSPICIOUS MEMORY MODULE" - NxAC has detected a bad memory module loaded onto the game. In other words, this is a hack...
 * "UNEXPECTED CVAR SCAN DATA" - NxAC Server has received an unexpected response to a Cvar Scan query.
@@ -35,10 +36,12 @@ These violations will only trigger a public announce:
 * "SCREENSHOT FAILURE" - A screenshot request has been sent to this player, and it failed.
 
 ### CVAR Scanner
+
 NxAC can scan clients to find cvars that should not be registered in the game (usually known cheat cvars) or find CVARS with bad values.
 To enable this feature, you must install a list of cvar rules on the server, and enable some cvars in your server config.
 
 #### Options
+
 [n_NxAC_CvarScan](cvar-reference#n_NxAC_CvarScan): Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")  
 [n_NxAC_CvarScanWait](cvar-reference#n_NxAC_CvarScanWait): Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")  
 [n_NxAC_CvarScanDelay](cvar-reference#n_NxAC_CvarScanDelay): Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")  
@@ -63,7 +66,6 @@ CVARNAME RULE (NULL rule)
 * INC "val": Cvar value must INCLUDE (must contain) val
 * EXC "val": Cvar value must EXCLUDE (must not contain) val
 * NULL: Cvar must not exist, at all
-
 
 It is recommended to search for known hack cvars only. We do not recommend scanning for engine cvars or other original game cvars (r_*, cl_*, cg_*, in_* etc...).
 If you want to restrict "normal" cvars, you should use N!tmod's forcecvar and sv_cvar features instead.

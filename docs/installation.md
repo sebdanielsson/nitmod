@@ -6,8 +6,6 @@ hide_title: false
 hide_table_of_contents: false
 ---
 
-# Installation
-
 ## Download
 
 [Nitmod 2.3.4 Beta 4](http://etmods.net/downloads/nitmod_2.3.4-b4.zip)
@@ -33,9 +31,9 @@ Some features, like the admin system, [g_XPSave](cvar-reference#g_xpsave) and [n
 
 To setup admin levels on your server, you need to configure `nitmod/levels.db`. Here is a [levels-sample.db](examples/levels-sample.db).
 
-** Description:**
+### Description
 
-```
+```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every level.
 level =     // Level Number
 name =      // Level Name
@@ -54,8 +52,9 @@ Use `!levlist` and `!levinfo` commands to display informations about existing le
 N!tmod allows adding custom commands to the existing admin system commands set.
 To setup custom commands on your server, you must create `nitmod/commands.db`. Here is [commands-sample.db](examples/commands-sample.db).
 
-**Description:**
-```
+#### Description custom commands
+
+```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every command.
 name =      // Command name (ex: "test")
 exec =      // Command sent to server (ex: chat "^3Test command")
@@ -69,8 +68,9 @@ If you manually edit this file while the server is running, use `!readconfig` co
 
 To setup custom votes on your server, you must create `nitmod/votes.db`. Here is [votes-sample.db](examples/votes-sample.db).
 
-**Description:**
-```
+#### Description custom votes
+
+```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every vote.
 name =      // max 20 chars vote name (to use with /callvote)
 message =   // max 256 chars message displayed on clients when vote is called
