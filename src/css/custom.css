@@ -38,6 +38,7 @@
   overflow: visible;
 }
 
+/* Temporary fix for misaligned searchbox @cmfcmf/docusaurus-search-local */
 .searchBox_dLyj {
   padding: 0 !important;
 }
