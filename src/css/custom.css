@@ -30,6 +30,10 @@
   background-color: #660000;
 }
 
+.hero__image {
+  width: 284px;
+}
+
 .navbar__title {
   overflow: visible;
 }
