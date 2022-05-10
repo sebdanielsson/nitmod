@@ -5,7 +5,7 @@ module.exports = {
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
         // whether to index docs pages
-        indexDocs: false,
+        indexDocs: true,
 
         // Whether to also index the titles of the parent categories in the sidebar of a doc page.
         // 0 disables this feature.
