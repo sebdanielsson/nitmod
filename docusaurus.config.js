@@ -11,8 +11,7 @@ module.exports = {
         // 0 disables this feature.
         // 1 indexes the direct parent category in the sidebar of a doc page
         // 2 indexes up to two nested parent categories of a doc page
-        // 3...
-        //
+
         // Do _not_ use Infinity, the value must be a JSON-serializable integer.
         indexDocSidebarParentCategories: 0,
 
