@@ -26,7 +26,7 @@ jobs:
         with:
           urls: |
             ${{ steps.vercel-preview.outputs.url }}
-            ${{ steps.vercel-preview.outputs.url }}/contact
+            ${{ steps.vercel-preview.outputs.url }}/docs/installation
           uploadArtifacts: true
           temporaryPublicStorage: true
 
