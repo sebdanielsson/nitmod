@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>N!tmod Blog</title>
-        <link>https://etmods.net/nitmod/blog</link>
+        <link>https://sebdanielsson.github.io/nitmod/nitmod/blog</link>
         <description>N!tmod Blog</description>
         <lastBuildDate>Sat, 12 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[N!tmod 2.3.4 Beta 4]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.4-b4</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.4-b4</link>
             <guid>nitmod-2.3.4-b4</guid>
             <pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>EXPERIMENTAL - Compatibility with ET: Legacy server demos</small><br>
@@ -30,7 +30,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.4 Beta 3]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.4-b3</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.4-b3</link>
             <guid>nitmod-2.3.4-b3</guid>
             <pubDate>Thu, 03 Jun 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Fixed a remaining crash/freeze issue reported right after 2.3.4-b2 release</small></p>]]></content:encoded>
@@ -41,7 +41,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.4 Beta 2]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.4-b2</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.4-b2</link>
             <guid>nitmod-2.3.4-b2</guid>
             <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Increased MAX_MENUS and MAX_MENUITEMS to fix some server's custom menus not loading</small><br>
@@ -70,7 +70,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.4 Beta 1]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.4-b1</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.4-b1</link>
             <guid>nitmod-2.3.4-b1</guid>
             <pubDate>Mon, 24 May 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Linux 64-bit support (client + server)</small><br>
@@ -122,7 +122,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.2 (Build 20210131)]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.2_20210131</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.2_20210131</link>
             <guid>nitmod-2.3.2_20210131</guid>
             <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>g_disableComplaints flag 8 (Disable complaints for tripmines teamkills)</small><br>
@@ -149,7 +149,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.2 (Build 20201231)]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.2_20201231</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.2_20201231</link>
             <guid>nitmod-2.3.2_20201231</guid>
             <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Mod couldn't load on Linux/MacOS (MacOS Remains untested because I don't have a Mac at home...)</small><br>
@@ -160,7 +160,7 @@
         </item>
         <item>
             <title><![CDATA[N!tmod 2.3.2 (Build 20201228-1)]]></title>
-            <link>https://etmods.net/nitmod/blog/nitmod-2.3.2_20201228-1</link>
+            <link>https://sebdanielsson.github.io/nitmod/nitmod/blog/nitmod-2.3.2_20201228-1</link>
             <guid>nitmod-2.3.2_20201228-1</guid>
             <pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self-stab bug with g_hitboxes enabled (Thanks to eG clan for help with debugging).</small><br>
