@@ -27,9 +27,11 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: true,
   favicon: 'img/nitmod-square.webp',
   organizationName: 'sebdanielsson', // Usually your GitHub org/user name.
   projectName: 'nitmod-docusaurus', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
