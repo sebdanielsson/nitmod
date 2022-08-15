@@ -22,7 +22,7 @@ module.exports = {
     ],
   ],
   title: 'N!tmod',
-  tagline: 'Available for ET: Legacy 32-bit & 64-bit',
+  tagline: 'Available for ET: Legacy 32-bit & 64-bit.',
   url: 'https://sebdanielsson.github.io/nitmod/',
   baseUrl: '/nitmod/',
   onBrokenLinks: 'throw',
