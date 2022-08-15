@@ -27,7 +27,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  trailingSlash: true,
+  trailingSlash: false,
   favicon: 'img/nitmod-square.webp',
   organizationName: 'sebdanielsson', // Usually your GitHub org/user name.
   projectName: 'nitmod-docusaurus', // Usually your repo name.
