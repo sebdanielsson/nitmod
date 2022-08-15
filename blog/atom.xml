@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://etmods.net/blog</id>
+    <title>N!tmod Blog</title>
+    <updated>2021-06-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://etmods.net/blog"/>
+    <subtitle>N!tmod Blog</subtitle>
+    <icon>https://etmods.net/img/nitmod-square.webp</icon>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.4 Beta 4]]></title>
+        <id>nitmod-2.3.4-b4</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.4-b4"/>
+        <updated>2021-06-12T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>EXPERIMENTAL - Compatibility with ET: Legacy server demos</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>g_fixedPhysics was broken (since version 2.2)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>UI_Alloc crash on Linux/MacOS x86_64</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Empty awards during intermission</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Empty crashlogs on Linux x86_64</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Separate server crash logs (crash_mapname_date_time.log)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>MAX_CUSTOM_COMMANDS from 64 to 96 (feature request, not recommended)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Optimized ClientUserInfoChanged checks and log messages when dropping a client</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>SQLite errors are now logged to g_log</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>NxAC version 2.2 - Improved stability</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+        <category label="beta" term="beta"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.4 Beta 3]]></title>
+        <id>nitmod-2.3.4-b3</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.4-b3"/>
+        <updated>2021-06-03T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Fixed a remaining crash/freeze issue reported right after 2.3.4-b2 release</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+        <category label="beta" term="beta"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.4 Beta 2]]></title>
+        <id>nitmod-2.3.4-b2</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.4-b2"/>
+        <updated>2021-06-02T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Increased MAX_MENUS and MAX_MENUITEMS to fix some server's custom menus not loading</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Don't activate triggers (escort vehicles for example) when playing dead</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>First blood and First headshot announces (broken in 2.3.4-b1)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Vote message sometimes staying on screen (untested, very tricky to reproduce, but should no longer happen)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Crash/freeze on Windows after vid_restart/map change due to NxAC</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Faster SQLite queries</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Re-enabled macOS 32 bit support (untested)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>macOS server library (qagame_mac) AKA it is now possible to host a N!tmod server on macOS!</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Added: It is now possible to find users by IP address or MAC address with !userlist</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Added: Players muted through votes will be muted for g_defaultMute seconds</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Added: /csinfo 'dumpall' argument (server side, for debugging purposes)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Added: Server's NxAC status icon on map loading screen</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Modified some N!tmod specific menus</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Enabled "configstrings" command again (client side, for debugging purposes)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Nicer shoutcaster/spectator names above players</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Modified macOS Minimum version to 10.8 (was 10.12 in 2.3.4-b1)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>More code cleanup and compiler warnings fixed</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Some critical parts of the NxAC code on Windows have been rewritten from scratch</small><br>
+<strong><span style="color:#CA1111">Removed:</span></strong> <small>Server's Punkbuster status icon on map loading screen</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+        <category label="beta" term="beta"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.4 Beta 1]]></title>
+        <id>nitmod-2.3.4-b1</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.4-b1"/>
+        <updated>2021-05-24T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Linux 64-bit support (client + server)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>macOS 64-bit support (client)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Support for Omni-Bot 64 bit (if server is running x86_64)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Missing class menus files</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>"mod_build" serverinfo cvar</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Build CPU type in !about output, crashlogs, G_InitGame</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Don't use "screenshotJPEG" when using ET:Legacy and cg_useScreenshotJPEG = 1</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>!about now shows buil-in SQLite API version</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>"humans" statusResponse key (used by UI serverlist)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Ingame serverlist will now hide serverfacades and server returning no or invalid statusResponse</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>cg_pmSounds: 0 - Disable sound notification for PM/Adminchat | 1 - Enable</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Ingame serverlist now displays real human counts based on statusResponse "humans" key (also compatible with ET:Legacy "humans" infoResponse key, if server and client are running ET:Legacy. Otherwise based on ping)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Experimental widescreen support for UI and modified menu files accordingly</small><br>
+<strong><span style="color:#CA1111">Removed:</span></strong> <small>macOS PPC support</small><br>
+<strong><span style="color:#CA1111">Removed:</span></strong> <small>macOS 32.bit support</small><br>
+<strong><span style="color:#CA1111">Removed:</span></strong> <small>Ingame serverlist "TR" column</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Built-in SQLite Interface updated to version 3.35.5 (previously 3.8.5)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>g_hitboxes now doesn't uses any extra entities</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Code cleanup and fixed many compiler warnings</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Code optimizations for faster game frame processing</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>cg_autoaction demo recording, for good</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>"Wounded names" were sometimes drawn for current player when dying</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Potential bug where CG_RegisterClients would fail on connect/vid_restart/map_restart, resulting in missing players info until their userinfo was changed</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Potential (unconfirmed) client crash/freeze when connecting/switching maps</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>"EV_BULLET_HIT_WALL" on players bbox with g_hitboxes enabled</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>cg_autoaction stats dump generating bad file/folder names</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>g_GUIDChecks could potentially allow players with an invalid/spoofed NGUID</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>First poison hit had no effect on teammates if g_friendlyFire flag 2 (half damage) was set</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Revive hitbox height was sometimes wrong, revives should be easier now</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>revive/knife/poison hitbox height was too small with g_hitboxes enabled</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self poisoning with g_hitboxes enabled</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Flackjecket powerup didn't reduce tripmine damage taken</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>some commands feedback typos</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players sometimes respawning in enemy spawnpoints when none were available (on servers with a lot of players)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Loading 'levels.db' instead of 'votes.db' after automatically creating default 'votes.db' if it didn't exist</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Potential server crash with error message "nitrox_CSIndex: overflow" due to alternative configstrings system introduced in version 2.2 (never reported, but happened on the test server a few times)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>et_ClientUserinfoChanged LUA callback was sometimes not called</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>LUA et.gentity_get "sess.muted" field was always returning -1</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>NxAC Faster screenshot file transfer</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>NxAC Fixed empty/black/corrupted screenshots</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>NxAC bug where it could ban bots/players connecting after another player was automatically banned</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>NxAC bug where a player could escape an automatic ban if the server was still waiting for the auto screenshot</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+        <category label="beta" term="beta"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20210131)]]></title>
+        <id>nitmod-2.3.2_20210131</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.2_20210131"/>
+        <updated>2021-01-31T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>g_disableComplaints flag 8 (Disable complaints for tripmines teamkills)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Some global awards</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>g_artilleryHints (0 - Disable | 1 - Enable team artillery zone hints)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>cg_artilleryHints (0 - Disable | 1 - Display team artillery zone hints, if enabled on server)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>'nopm' admin flag - Disable private messages for levels or users with this flag</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Global Backstabs stats were incremented when backstabing a teammate</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Bug with mortar cam frame staying on screen during whole map</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>/team exploit allowing players to spawn with other classes weapons if g_pickAnyWeapon was enabled</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>HUD XP was no longer flashing yellow after increasing since recent builds</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players could walk with scoped weapons if global stats were displayed on screen</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>cg_autoaction demo recording sometimes not working</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>HUD BS/HS stats now flash green for a short time when they increase</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Renamed some global awards</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Notifications popups (top right of the screen for awards, private messages...)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Global stats window size and opacity</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Code optimizations</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Loading screen progress bar</small><br>
+<strong><span style="color:#CA1111">Removed:</span></strong> <small>"globalstats" command is no longer bound to N key by default</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20201231)]]></title>
+        <id>nitmod-2.3.2_20201231</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.2_20201231"/>
+        <updated>2020-12-31T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Mod couldn't load on Linux/MacOS (MacOS Remains untested because I don't have a Mac at home...)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Something was wrong with shuffle by K/D Ratio</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20201228-1)]]></title>
+        <id>nitmod-2.3.2_20201228-1</id>
+        <link href="https://etmods.net/blog/nitmod-2.3.2_20201228-1"/>
+        <updated>2020-12-28T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self-stab bug with g_hitboxes enabled (Thanks to eG clan for help with debugging).</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Announcer ("prepare to fight", etc) was sometimes corrupted</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Announcer font (kill assistance, etc...)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Objectives announces on screen (when planting, destroying, damaging, etc...)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Typo when tripmine was set</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Intermission Awards 'emojis'</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>LUA et_obituary can now replace the default obituaries with it's return value (Request #54)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Typo when tripmine was set</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>BUG #73 Satchel bug where satchel would only damage players but not objectives around</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Satchel bug where satchel wouldnt drop (related to BUG #73)</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>BUG #70 Medics couldn't pick Sten at all when g_pickAnyWeapon was enabled (except if g_weapons 512 flag was set)</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Avoid flooding client with server commands when arming/disarming dyna/mines</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>Objective hints, makes it easier to find objectives to construct/destroy (experimental)</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>cg_objectiveHints client cvar</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>'cg_drawHUDStats' cvar (0/1): toggle drawing N!tmod's HUD stats</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Reworked some HUD text elements to make them easier to read on bright maps</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>'cg_woundedNames' cvar (0/1): Draw names above wounded players when playing as a medic. Wounded players will also see nearby medics names.</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>'cg_drawBanners' cvar (0/1): Allow disabling drawing of server banners (requested on Facebook and bug tracker).</small><br>
+<strong><span style="color:#25c2a0">Added:</span></strong> <small>!seen output now displas UserID (NGUID last 8 chars)</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+    </entry>
+</feed>

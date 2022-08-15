@@ -1,0 +1,17 @@
+**********
+
+name = panzerwaron
+message = "^2Enable Panzerwar?"
+help = "Enable Panzerwar"
+exec = !panzerwar 1
+passtext = "^5Panzerwar ^7is now ^2Enabled^7!"
+levels = 1 2
+
+**********
+
+name = panzerwaron
+message = "^1Disable Panzerwar?"
+help = D"isable Panzerwar"
+exec = !panzerwar 0
+passtext = "^5Panzerwar ^7is now ^1Disabled^7!"
+levels = 1 2

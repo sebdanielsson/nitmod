@@ -1,0 +1,13 @@
+**********
+
+name = minbots
+exec = bot minbots [1]
+desc = Sets the minimum number of bots on the server
+levels = 1 2
+
+**********
+
+name = maxbots
+exec = bot maxbots [1]
+desc = Sets the maximum number of bots on the server
+levels = 1 2
