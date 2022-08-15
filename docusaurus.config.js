@@ -24,13 +24,13 @@ module.exports = {
   title: 'N!tmod',
   tagline: 'Available for ET: Legacy 32-bit & 64-bit',
   url: 'https://etmods.net',
-  baseUrl: '/',
+  baseUrl: '/nitmod/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
   favicon: 'img/nitmod-square.webp',
   organizationName: 'sebdanielsson', // Usually your GitHub org/user name.
-  projectName: 'nitmod-docusaurus', // Usually your repo name.
+  projectName: 'nitmod', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   themeConfig: {
     colorMode: {
@@ -74,7 +74,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
+          href: 'https://github.com/sebdanielsson/nitmod',
           label: 'GitHub',
           position: 'right',
         },
@@ -122,7 +122,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/sebdanielsson/nitmod-docusaurus',
+              href: 'https://github.com/sebdanielsson/nitmod',
             },
           ],
         },
@@ -159,13 +159,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/sebdanielsson/nitmod-docusaurus/edit/main/',
+            'https://github.com/sebdanielsson/nitmod/edit/main/',
         },
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/sebdanielsson/nitmod-docusaurus/edit/main/blog/',
+            'https://github.com/sebdanielsson/nitmod/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
