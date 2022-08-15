@@ -25,3 +25,16 @@ function HomepageHeader() {
     </header>
   );
 }
+
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
+
+  return (
+    <Layout>
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  );
+}
