@@ -27,7 +27,6 @@ module.exports = {
   baseUrl: '/nitmod/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  trailingSlash: false,
   favicon: 'img/nitmod-square.webp',
   organizationName: 'sebdanielsson', // Usually your GitHub org/user name.
   projectName: 'nitmod', // Usually your repo name.
