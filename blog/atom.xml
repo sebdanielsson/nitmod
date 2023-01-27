@@ -9,10 +9,10 @@
     <icon>https://sebdanielsson.github.io/nitmod/img/nitmod-square.webp</icon>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.4 Beta 4]]></title>
-        <id>nitmod-2.3.4-b4</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4"/>
         <updated>2021-06-12T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>EXPERIMENTAL - Compatibility with ET: Legacy server demos</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>EXPERIMENTAL - Compatibility with ET: Legacy server demos</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>g_fixedPhysics was broken (since version 2.2)</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>UI_Alloc crash on Linux/MacOS x86_64</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Empty awards during intermission</small><br>
@@ -32,10 +32,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.4 Beta 3]]></title>
-        <id>nitmod-2.3.4-b3</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b3</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b3"/>
         <updated>2021-06-03T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Fixed a remaining crash/freeze issue reported right after 2.3.4-b2 release</small></p>]]></content>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Fixed a remaining crash/freeze issue reported right after 2.3.4-b2 release</small></p>]]></content>
         <author>
             <name>N!trox*</name>
         </author>
@@ -46,10 +46,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.4 Beta 2]]></title>
-        <id>nitmod-2.3.4-b2</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b2</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b2"/>
         <updated>2021-06-02T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Increased MAX_MENUS and MAX_MENUITEMS to fix some server's custom menus not loading</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Increased MAX_MENUS and MAX_MENUITEMS to fix some server's custom menus not loading</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Don't activate triggers (escort vehicles for example) when playing dead</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>First blood and First headshot announces (broken in 2.3.4-b1)</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Vote message sometimes staying on screen (untested, very tricky to reproduce, but should no longer happen)</small><br>
@@ -78,10 +78,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.4 Beta 1]]></title>
-        <id>nitmod-2.3.4-b1</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b1</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b1"/>
         <updated>2021-05-24T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Linux 64-bit support (client + server)</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Linux 64-bit support (client + server)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>macOS 64-bit support (client)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Support for Omni-Bot 64 bit (if server is running x86_64)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Missing class menus files</small><br>
@@ -133,10 +133,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20210131)]]></title>
-        <id>nitmod-2.3.2_20210131</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20210131</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20210131"/>
         <updated>2021-01-31T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>g_disableComplaints flag 8 (Disable complaints for tripmines teamkills)</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>g_disableComplaints flag 8 (Disable complaints for tripmines teamkills)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Some global awards</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>g_artilleryHints (0 - Disable | 1 - Enable team artillery zone hints)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>cg_artilleryHints (0 - Disable | 1 - Display team artillery zone hints, if enabled on server)</small><br>
@@ -163,10 +163,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20201231)]]></title>
-        <id>nitmod-2.3.2_20201231</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201231</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201231"/>
         <updated>2020-12-31T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Mod couldn't load on Linux/MacOS (MacOS Remains untested because I don't have a Mac at home...)</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Mod couldn't load on Linux/MacOS (MacOS Remains untested because I don't have a Mac at home...)</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Something was wrong with shuffle by K/D Ratio</small></p>]]></content>
         <author>
             <name>N!trox*</name>
@@ -177,10 +177,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.2 (Build 20201228-1)]]></title>
-        <id>nitmod-2.3.2_20201228-1</id>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201228-1</id>
         <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201228-1"/>
         <updated>2020-12-28T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a class="hash-link" href="#changelog" title="Direct link to heading">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self-stab bug with g_hitboxes enabled (Thanks to eG clan for help with debugging).</small><br>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self-stab bug with g_hitboxes enabled (Thanks to eG clan for help with debugging).</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Announcer ("prepare to fight", etc) was sometimes corrupted</small><br>
 <strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Announcer font (kill assistance, etc...)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Objectives announces on screen (when planting, destroying, damaging, etc...)</small><br>
