@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sebdanielsson.github.io/nitmod/blog</id>
     <title>N!tmod Blog</title>
-    <updated>2021-06-12T00:00:00.000Z</updated>
+    <updated>2023-02-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sebdanielsson.github.io/nitmod/blog"/>
     <subtitle>N!tmod Blog</subtitle>
     <icon>https://sebdanielsson.github.io/nitmod/img/nitmod-square.webp</icon>
+    <entry>
+        <title type="html"><![CDATA[N!tmod 2.3.5]]></title>
+        <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5</id>
+        <link href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5"/>
+        <updated>2023-02-27T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Intermission visual hit regions</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing all their XP after a map change or reconnect</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing XP in some skills (mainly CovertOps skill) after reaching a very high XP amount</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Potential client crash when invalid weapon number was passed to the 'class' command.</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Cancel vote when intermission starts</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Setting n_NxAC to 0 on the server will not report violations at all</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>NxAC version 2.3 - Fix compatibility with recent ET:Legacy updates</small></p>]]></content>
+        <author>
+            <name>N!trox*</name>
+        </author>
+        <category label="nitmod" term="nitmod"/>
+        <category label="release" term="release"/>
+        <category label="changelog" term="changelog"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[N!tmod 2.3.4 Beta 4]]></title>
         <id>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4</id>

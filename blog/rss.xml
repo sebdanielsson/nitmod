@@ -4,10 +4,26 @@
         <title>N!tmod Blog</title>
         <link>https://sebdanielsson.github.io/nitmod/blog</link>
         <description>N!tmod Blog</description>
-        <lastBuildDate>Sat, 12 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Feb 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[N!tmod 2.3.5]]></title>
+            <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5</link>
+            <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5</guid>
+            <pubDate>Mon, 27 Feb 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2><p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Intermission visual hit regions</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing all their XP after a map change or reconnect</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing XP in some skills (mainly CovertOps skill) after reaching a very high XP amount</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Potential client crash when invalid weapon number was passed to the 'class' command.</small><br>
+<strong><span style="color:#1877F2">Fixed:</span></strong> <small>Cancel vote when intermission starts</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Setting n_NxAC to 0 on the server will not report violations at all</small><br>
+<strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>NxAC version 2.3 - Fix compatibility with recent ET:Legacy updates</small></p>]]></content:encoded>
+            <category>nitmod</category>
+            <category>release</category>
+            <category>changelog</category>
+        </item>
         <item>
             <title><![CDATA[N!tmod 2.3.4 Beta 4]]></title>
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4</link>
