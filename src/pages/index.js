@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="http://etmods.net/downloads/nitmod_2.3.4-b4.zip">
-            Download N!tmod 2.3.4-B4
+            to="http://etmods.net/downloads/nitmod_2.3.5.zip">
+            Download N!tmod 2.3.5
           </Link>
         </div>
       </div>
