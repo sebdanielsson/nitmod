@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknitmod=self.webpackChunknitmod||[]).push([[1031],{2209:e=>{e.exports=JSON.parse('{"label":"release","permalink":"/nitmod/blog/tags/release","allTagsPath":"/nitmod/blog/tags","count":8,"unlisted":false}')}}]);
