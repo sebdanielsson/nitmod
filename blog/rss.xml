@@ -13,7 +13,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5</guid>
             <pubDate>Mon, 27 Feb 2023 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.5#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Intermission visual hit regions</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing all their XP after a map change or reconnect</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Players losing XP in some skills (mainly CovertOps skill) after reaching a very high XP amount</small><br>
@@ -30,7 +30,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4</guid>
             <pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b4#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#25c2a0">Added:</span></strong> <small>EXPERIMENTAL - Compatibility with ET: Legacy server demos</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>g_fixedPhysics was broken (since version 2.2)</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>UI_Alloc crash on Linux/MacOS x86_64</small><br>
@@ -51,7 +51,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b3</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b3</guid>
             <pubDate>Thu, 03 Jun 2021 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b3#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Fixed a remaining crash/freeze issue reported right after 2.3.4-b2 release</small></p>]]></content:encoded>
             <category>nitmod</category>
             <category>release</category>
@@ -63,7 +63,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b2</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b2</guid>
             <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b2#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Increased MAX_MENUS and MAX_MENUITEMS to fix some server's custom menus not loading</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Don't activate triggers (escort vehicles for example) when playing dead</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>First blood and First headshot announces (broken in 2.3.4-b1)</small><br>
@@ -93,7 +93,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b1</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b1</guid>
             <pubDate>Mon, 24 May 2021 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.4-b1#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#25c2a0">Added:</span></strong> <small>Linux 64-bit support (client + server)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>macOS 64-bit support (client)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Support for Omni-Bot 64 bit (if server is running x86_64)</small><br>
@@ -146,7 +146,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20210131</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20210131</guid>
             <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20210131#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#25c2a0">Added:</span></strong> <small>g_disableComplaints flag 8 (Disable complaints for tripmines teamkills)</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>Some global awards</small><br>
 <strong><span style="color:#25c2a0">Added:</span></strong> <small>g_artilleryHints (0 - Disable | 1 - Enable team artillery zone hints)</small><br>
@@ -174,7 +174,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201231</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201231</guid>
             <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201231#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Mod couldn't load on Linux/MacOS (MacOS Remains untested because I don't have a Mac at home...)</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Something was wrong with shuffle by K/D Ratio</small></p>]]></content:encoded>
             <category>nitmod</category>
@@ -186,7 +186,7 @@
             <link>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201228-1</link>
             <guid>https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201228-1</guid>
             <pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="changelog">Changelog</h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changelog">Changelog<a href="https://sebdanielsson.github.io/nitmod/blog/nitmod-2.3.2_20201228-1#changelog" class="hash-link" aria-label="Direct link to Changelog" title="Direct link to Changelog">​</a></h2>
 <p><strong><span style="color:#1877F2">Fixed:</span></strong> <small>Self-stab bug with g_hitboxes enabled (Thanks to eG clan for help with debugging).</small><br>
 <strong><span style="color:#1877F2">Fixed:</span></strong> <small>Announcer ("prepare to fight", etc) was sometimes corrupted</small><br>
 <strong><span style="color:#FFBA00;font-size:smaller">Modified:</span></strong> <small>Announcer font (kill assistance, etc...)</small><br>
