@@ -24,8 +24,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "3.0.0",
-    "@docusaurus/tsconfig": "3.0.0"
+    "@docusaurus/eslint-plugin": "3.0.1",
+    "@docusaurus/tsconfig": "3.0.1"
   },
   "browserslist": {
     "production": [
