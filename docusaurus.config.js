@@ -61,7 +61,6 @@ module.exports = {
           label: "Bug Tracker",
           position: "left",
         },
-        { to: "/servers", label: "Servers", position: "right" },
         {
           href: "https://discord.gg/UHBpfFMHSX",
           label: "Discord",
@@ -107,10 +106,6 @@ module.exports = {
         {
           title: "Community",
           items: [
-            {
-              label: "Servers",
-              href: "servers",
-            },
             {
               label: "Discord",
               href: "https://discord.gg/UHBpfFMHSX",
