@@ -8,7 +8,7 @@ hide_table_of_contents: false
 
 ## Download
 
-[Nitmod 2.3.4 Beta 4](http://etmods.net/downloads/nitmod_2.3.4-b4.zip)
+[Nitmod 2.3.5](http://etmods.net/downloads/nitmod_2.3.5.zip)
 
 ## Install/Update
 
