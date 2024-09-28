@@ -2,13 +2,20 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-const FeatureList = [
+interface FeatureProps {
+  Img: string;
+  title: string;
+  description: React.ReactNode;
+}
+
+const FeatureList: FeatureProps[] = [
   {
     title: 'Admin system',
     Img: require('../../static/img/roles.webp').default,
     description: (
       <>
-        N!tmod includes a powerful Shrubbot-like admin system which let's you set up server roles and memberships.
+        N!tmod includes a powerful Shrubbot-like admin system which let's you set up server roles
+        and memberships.
       </>
     ),
   },
@@ -17,7 +24,8 @@ const FeatureList = [
     Img: require('../../static/img/doublejump.webp').default,
     description: (
       <>
-        N!tmod enables you to customize plenty of game options, including features such as doublejump and adding new weapons.
+        N!tmod enables you to customize plenty of game options, including features such as
+        doublejump and adding new weapons.
       </>
     ),
   },
@@ -26,27 +34,28 @@ const FeatureList = [
     Img: require('../../static/img/xpsave.webp').default,
     description: (
       <>
-        N!tmod let's you configure XP Save with options for save duration, XP required for each level and automatic XP reset.
+        N!tmod let's you configure XP Save with options for save duration, XP required for each
+        level and automatic XP reset.
       </>
     ),
   },
 ];
 
-function Feature({Img, title, description}) {
+const Feature: React.FC<FeatureProps> = ({ Img, title, description }) => {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img className={styles.featureImg} src={Img} alt="{title}"/>
+        <img className={styles['feature-img']} src={Img} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3>{title} </h3>
+        <p> {description} </p>
       </div>
     </div>
   );
-}
+};
 
-export default function HomepageFeatures() {
+const HomepageFeatures: React.FC = () => {
   return (
     <section className={styles.features}>
       <div className="container">
@@ -58,4 +67,6 @@ export default function HomepageFeatures() {
       </div>
     </section>
   );
-}
+};
+
+export default HomepageFeatures;

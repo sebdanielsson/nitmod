@@ -8,16 +8,17 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles['hero-banner'])}>
       <div className="container">
-        <img className="hero__image" src="img/nitmod.webp" alt="nitmod"></img>
+        <img className="hero-image" src="img/nitmod.webp" alt="nitmod"></img>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="http://etmods.net/downloads/nitmod_2.3.5.zip">
+            to="http://etmods.net/downloads/nitmod_2.3.5.zip"
+          >
             Download N!tmod 2.3.5
           </Link>
         </div>
@@ -27,7 +28,7 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout>
