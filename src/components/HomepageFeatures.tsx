@@ -11,7 +11,7 @@ interface FeatureProps {
 const FeatureList: FeatureProps[] = [
   {
     title: 'Admin system',
-    Img: require('../../static/img/roles.webp').default,
+    Img: 'img/roles.webp',
     description: (
       <>
         N!tmod includes a powerful Shrubbot-like admin system which let's you set up server roles
@@ -21,7 +21,7 @@ const FeatureList: FeatureProps[] = [
   },
   {
     title: 'Custom commands',
-    Img: require('../../static/img/doublejump.webp').default,
+    Img: 'img/doublejump.webp',
     description: (
       <>
         N!tmod enables you to customize plenty of game options, including features such as
@@ -31,7 +31,7 @@ const FeatureList: FeatureProps[] = [
   },
   {
     title: 'XP Save',
-    Img: require('../../static/img/xpsave.webp').default,
+    Img: 'img/xpsave.webp',
     description: (
       <>
         N!tmod let's you configure XP Save with options for save duration, XP required for each
