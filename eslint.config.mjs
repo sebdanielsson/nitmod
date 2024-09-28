@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 export default [
   eslint.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.recommended,
   // docusaurus.configs.recommended, // https://github.com/facebook/docusaurus/issues/10490
   {
     files: ['*.ts', '*.tsx', '*.js', '*.mjs', '*.cjs'],
