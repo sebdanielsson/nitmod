@@ -23,7 +23,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl: 'https://github.com/sebdanielsson/nitmod/edit/main/',
         },
@@ -33,7 +33,7 @@ const config: Config = {
           editUrl: 'https://github.com/sebdanielsson/nitmod/edit/main/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       },
     ],
