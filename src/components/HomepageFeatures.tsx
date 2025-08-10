@@ -1,6 +1,6 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./HomepageFeatures.module.css";
 
 interface FeatureProps {
   Img: string;
@@ -10,8 +10,8 @@ interface FeatureProps {
 
 const FeatureList: FeatureProps[] = [
   {
-    title: 'Admin system',
-    Img: 'img/roles.webp',
+    title: "Admin system",
+    Img: "img/roles.webp",
     description: (
       <>
         N!tmod includes a powerful Shrubbot-like admin system which let's you set up server roles
@@ -20,8 +20,8 @@ const FeatureList: FeatureProps[] = [
     ),
   },
   {
-    title: 'Custom commands',
-    Img: 'img/doublejump.webp',
+    title: "Custom commands",
+    Img: "img/doublejump.webp",
     description: (
       <>
         N!tmod enables you to customize plenty of game options, including features such as
@@ -30,8 +30,8 @@ const FeatureList: FeatureProps[] = [
     ),
   },
   {
-    title: 'XP Save',
-    Img: 'img/xpsave.webp',
+    title: "XP Save",
+    Img: "img/xpsave.webp",
     description: (
       <>
         N!tmod let's you configure XP Save with options for save duration, XP required for each
@@ -43,9 +43,9 @@ const FeatureList: FeatureProps[] = [
 
 const Feature: React.FC<FeatureProps> = ({ Img, title, description }) => {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={styles['feature-img']} src={Img} alt={title} />
+        <img className={styles["feature-img"]} src={Img} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title} </h3>

@@ -1,10 +1,10 @@
-import { type Config } from 'prettier';
+import { type Config } from "prettier";
 
 const config: Config = {
   useTabs: false,
   tabWidth: 2,
   singleQuote: false,
-  trailingComma: 'all',
+  trailingComma: "all",
   semi: true,
   printWidth: 100,
 };

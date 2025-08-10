@@ -1,13 +1,13 @@
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-html/html'],
+  extends: ["stylelint-config-standard", "stylelint-config-html/html"],
   rules: {
-    'at-rule-no-unknown': [
+    "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: ['tailwind'],
+        ignoreAtRules: ["tailwind"],
       },
     ],
-    'color-hex-length': null,
+    "color-hex-length": null,
   },
 };
