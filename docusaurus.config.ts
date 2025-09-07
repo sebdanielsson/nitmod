@@ -12,7 +12,10 @@ const config: Config = {
   organizationName: "sebdanielsson", // Usually your GitHub org/user name.
   projectName: "nitmod", // Usually your repo name.
   deploymentBranch: "gh-pages",
-
+  future: {
+    v4: true,
+    experimental_faster: true,
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
