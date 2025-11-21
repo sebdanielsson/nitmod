@@ -7,10 +7,9 @@ const config: Config = {
   url: "https://sebdanielsson.github.io",
   baseUrl: "/nitmod/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/nitmod-square.webp",
-  organizationName: "sebdanielsson", // Usually your GitHub org/user name.
-  projectName: "nitmod", // Usually your repo name.
+  organizationName: "sebdanielsson",
+  projectName: "nitmod",
   deploymentBranch: "gh-pages",
   future: {
     v4: true,
@@ -20,7 +19,11 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
   presets: [
     [
       "classic",
