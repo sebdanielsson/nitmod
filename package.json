@@ -38,7 +38,7 @@
     "@dreamsicle.io/stylelint-config-tailwindcss": "^1.1.2",
     "@eslint/js": "^9.39.2",
     "eslint": "^9.39.2",
-    "oxfmt": "^0.26.0",
+    "oxfmt": "^0.27.0",
     "stylelint": "^17.0.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^40.0.0",
