@@ -13,7 +13,7 @@ const config: Config = {
   deploymentBranch: "gh-pages",
   future: {
     v4: true,
-    experimental_faster: true,
+    faster: true,
   },
   i18n: {
     defaultLocale: "en",
