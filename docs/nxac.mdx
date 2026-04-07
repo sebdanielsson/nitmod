@@ -6,16 +6,16 @@ hide_title: false
 hide_table_of_contents: false
 ---
 
-## What is NxAC?
+## What is NxAC? {/* #what-is-nxac */}
 
 NxAC is N!tmod's anti-cheat tool and was officially released in version 2.3. It's built-in to the mod and just needs to be configured.
 
 By default, NxAC will automatically report violations to everyone on the server, request a screenshot and kick/ban the cheater.
 Every violation will be logged into the `nitmod/NxAC/NxAC_Violations.log` file.
 
-## Configuration
+## Configuration {/* #configuration */}
 
-### Enable NxAC
+### Enable NxAC {/* #enable-nxac */}
 
 If you want your server to automatically kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 1 in your server config.  
 If you want your server to automatically request a screenshot, kick/ban cheaters, and be listed as a "cheat protected" server, you have to set the [n_NxAC](cvar-reference#n_nxac) to 2 in your server config.  
@@ -24,7 +24,7 @@ This is a latched cvar, which means you will have to restart the map, or wait fo
 Once this cvar is enabled, NxAC server will automatically take actions when it detects a violation.
 If the [n_NxAC](cvar-reference#n_nxac) cvar is set to 0, it will ONLY broadcast the violation to everyone on the server and the server will NOT be listed as a "cheat protected" server.
 
-#### Automatic kick violations
+#### Automatic kick violations {/* #automatic-kick-violations */}
 
 * "UNKNOWN_CLIENT_BINARY" - NxAC has detected that this player is using an ET client that is not allowed on the server, because its SHA1 checksum wasn't found inside the "NxAC/checksums.cfg" file.
 * "SUSPICIOUS MEMORY MODULE" - NxAC has detected a bad memory module loaded onto the game. In other words, this is a hack...
@@ -35,20 +35,20 @@ Automatic PERMANENT ban for these violations (Undeniable evidences of cheating):
 These violations will only trigger a public announce:
 * "SCREENSHOT FAILURE" - A screenshot request has been sent to this player, and it failed.
 
-### CVAR Scanner
+### CVAR Scanner {/* #cvar-scanner */}
 
 NxAC can scan clients to find cvars that should not be registered in the game (usually known cheat cvars) or find CVARS with bad values.
 To enable this feature, you must install a list of cvar rules on the server, and enable some cvars in your server config.
 
-#### Options
+#### Options {/* #options */}
 
-[n_NxAC_CvarScan](cvar-reference#n_NxAC_CvarScan): Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")  
-[n_NxAC_CvarScanWait](cvar-reference#n_NxAC_CvarScanWait): Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")  
-[n_NxAC_CvarScanDelay](cvar-reference#n_NxAC_CvarScanDelay): Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")  
-[n_NxAC_CvarScanInterval](cvar-reference#n_NxAC_CvarScanInterval): Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")  
-[n_NxAC_CvarScanMaxWarnings](cvar-reference#n_NxAC_CvarScanMaxWarnings): Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")  
+[n_NxAC_CvarScan](cvar-reference#n_nxac_cvarscan): Set this CVAR to 1 to enable NxAC CVAR Scanner (Default: "0")  
+[n_NxAC_CvarScanWait](cvar-reference#n_nxac_cvarscanwait): Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting (Default: "10000")  
+[n_NxAC_CvarScanDelay](cvar-reference#n_nxac_cvarscandelay): Delay in milliseconds between each cvar query. Too short might cause lags or server command overflow (Default: "750")  
+[n_NxAC_CvarScanInterval](cvar-reference#n_nxac_cvarscaninterval): Delay in milliseconds before starting a new scan after the previous one has finished (Default "300000")  
+[n_NxAC_CvarScanMaxWarnings](cvar-reference#n_nxac_cvarscanmaxwarnings): Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0. (Default: "1")  
 
-#### Rules
+#### Rules {/* #rules */}
 
 The syntax for a CVAR Scanner depends of what type of rule is used, and can look like:
 

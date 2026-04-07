@@ -25,6 +25,8 @@
     "@docusaurus/preset-classic": "3.10.0",
     "@easyops-cn/docusaurus-search-local": "^0.55.1",
     "@mdx-js/react": "^3.1.1",
+    "baseline-browser-mapping": "^2.10.16",
+    "caniuse-lite": "^1.0.30001786",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.4",

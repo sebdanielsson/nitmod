@@ -6,11 +6,11 @@ hide_title: false
 hide_table_of_contents: false
 ---
 
-## Download
+## Download {/* #download */}
 
 [Nitmod 2.3.5](http://etmods.net/downloads/nitmod_2.3.5.zip)
 
-## Install/Update
+## Install/Update {/* #installupdate */}
 
 1. Stop the server.
 2. If installing for the first time, create a nitmod folder next to your etmain folder.
@@ -18,20 +18,20 @@ hide_table_of_contents: false
 4. If installing for the first time, change your server's `fs_game` cvar to `nitmod` (either in your control panel for rented game servers, or in your startup command if you're hosting it yourself).
 5. Start the server.
 
-## Configuration
+## Configuration {/* #configuration */}
 
 N!tmod releases come with a sample configuration file [nitmod-sample.cfg](examples/nitmod-sample.cfg). It should be saved as `nitmod/nitmod.cfg`. It contains every mod cvar set to it's default value, and a small description of what it is used for.
 For more information, read the [Cvar Reference](cvar-reference).
 
-### Setting up the SQLite database
+### Setting up the SQLite database {/* #setting-up-the-sqlite-database */}
 
 Some features, like the admin system, [g_XPSave](cvar-reference#g_xpsave) and [n_mapRecords](cvar-reference#n_maprecords) are disabled by default since they need access to a SQLite database to function. To create the database, use the cvar [n_SQLiteDBPath](cvar-reference#n_sqlitedbpath) to set a location for the SQLite database file to reside on. The database file will be automaticly created if the above cvar is set correctly and the server process has read/write permissions on the specified path. If an invalid filename is provided, N!tmod will attempt to create the database inside the nitmod directory.
 
-### Admin levels
+### Admin levels {/* #admin-levels */}
 
 To setup admin levels on your server, you need to configure `nitmod/levels.db`. Here is a [levels-sample.db](examples/levels-sample.db).
 
-### Description
+### Description {/* #description */}
 
 ```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every level.
@@ -47,12 +47,12 @@ The file will automaticly be overwritten when using one of these commands.
 If you manually edit this file while the server is running, use `!readconfig` command to load modifications.
 Use `!levlist` and `!levinfo` commands to display informations about existing levels.
 
-### Custom commands
+### Custom commands {/* #custom-commands */}
 
 N!tmod allows adding custom commands to the existing admin system commands set.
 To setup custom commands on your server, you must create `nitmod/commands.db`. Here is [commands-sample.db](examples/commands-sample.db).
 
-#### Description custom commands
+#### Description custom commands {/* #description-custom-commands */}
 
 ```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every command.
@@ -64,11 +64,11 @@ levels =    // Levels having access to this command, delimited by spaces (ex: 0 
 
 If you manually edit this file while the server is running, use `!readconfig` command to load modifications.
 
-### Custom votes
+### Custom votes {/* #custom-votes */}
 
 To setup custom votes on your server, you must create `nitmod/votes.db`. Here is [votes-sample.db](examples/votes-sample.db).
 
-#### Description custom votes
+#### Description custom votes {/* #description-custom-votes */}
 
 ```raw
 **********  // Delimiter (10 *) Must IMPERATIVELY be placed BEFORE every vote.

@@ -6,7 +6,7 @@ hide_title: false
 hide_table_of_contents: false
 ---
 
-#### g_lms_teamForceBalance
+#### g_lms_teamForceBalance {/* #g_lms_teamforcebalance */}
 
 Controls whether the game will prevent new players from joining the team with more players than the other  
 0 : Disable  
@@ -15,21 +15,21 @@ Default: 1
 
 ---
 
-#### g_lms_roundlimit
+#### g_lms_roundlimit {/* #g_lms_roundlimit */}
 
 Sets the maximum number of rounds for a single matchup between teams. A team is considered to win a match when more than 50% of num rounds are won.  
 Default: 3  
 
 ---
 
-#### g_lms_matchlimit
+#### g_lms_matchlimit {/* #g_lms_matchlimit */}
 
 Sets the maximum number of matches to play before moving on to the next map in rotation.  
 Default: 2  
 
 ---
 
-#### g_lms_lockTeams
+#### g_lms_lockTeams {/* #g_lms_lockteams */}
 
 Controls locked teams during match play. When enabled, the teams are locked once match play begins and new players may not join.  
 0 : Disable  
@@ -38,7 +38,7 @@ Default: 0
 
 ---
 
-#### g_lms_followTeamOnly
+#### g_lms_followTeamOnly {/* #g_lms_followteamonly */}
 
 Controls same-team spectator restrictios  
 0 : Disable  
@@ -47,7 +47,7 @@ Default: 1
 
 ---
 
-#### g_teamChangeKills
+#### g_teamChangeKills {/* #g_teamchangekills */}
 
 Changing team adds a death to the player stats  
 0 : Disable  
@@ -56,70 +56,70 @@ Default: 1
 
 ---
 
-#### g_logAdmin
+#### g_logAdmin {/* #g_logadmin */}
 
 Name of the file where admin commands attempts will be logged.  
 Default: ""  
 
 ---
 
-#### g_mapConfigs
+#### g_mapConfigs {/* #g_mapconfigs */}
 
 Allows you to execute a custom config file for each map. When set, it specifies the name of the folder inside your server's nitmod directory. The config file for a map has to be named the same as the map with the extension .cfg, for instance oasis.cfg. You should also create a default.cfg file which will be read before the map-specific config files.  
 Default: ""  
 
 ---
 
-#### g_defaultMute
+#### g_defaultMute {/* #g_defaultmute */}
 
 Sets the default time for mute.  
 Default: 3600  
 
 ---
 
-#### g_moverScale
+#### g_moverScale {/* #g_moverscale */}
 
 Multiply the speed of movers (e.g. tanks) by float.  
 Default: 1.0  
 
 ---
 
-#### g_maxWarp
+#### g_maxWarp {/* #g_maxwarp */}
 
 Controls the amount of "warping" that players with high packet loss can do. The [integer] is the number of server frames that you allow a player to miss before their next movement is put in check. A server frame is 50ms on a typical server (sv_fps set to 20). This means that if you set g_maxWarp to 5 you wont allow players to warp from point A to point B if that distance takes an normal player 1/4 of a second to travel. Setting this to 1 is a good way to drive off just about everyone from your server. As far as I can tell, 1000ms is allowed by default in the game, so setting this to any value higher than 39 should have no effect if sv_fps is set to 10.  
 Default: 4  
 
 ---
 
-#### g_mapScriptDirectory
+#### g_mapScriptDirectory {/* #g_mapscriptdirectory */}
 
 Changes directory for custom mapscripts. Similar to ETPro s b_mapScriptsDirectory.  
 Default: ""  
 
 ---
 
-#### g_campaignFile
+#### g_campaignFile {/* #g_campaignfile */}
 
 Similar to ETPro s b_campaignFile. If you set this to the name of a file in your fs_path it will be interpreted as a .campaign script and all other .campaign scripts in your pk3 files will be ignored. This is useful for making custom campaigns since you don t need to offer a pk3 file containing a custom .campaign script for all clients to download. However, if the client has not downloaded this .campaign file in a pk3, they will not see information about the campaign. Such information includes: will not display in the VOTE -> MAP list map locations will not draw on the map of Europe. campaign description will not draw in the right panel total number of maps and current maps order in the campaign will not be shown in the intermission screens. Also, even though the built-in campaigns cmpgn_centraleurope and cmpgn_northafrica will not be valid, they will still appear in the client s VOTE -> MAP menu. If a vote for one of them passes, nothing will happen. Setting this to "" disables it.  
 Default: ""  
 
 ---
 
-#### g_censor
+#### g_censor {/* #g_censor */}
 
 List of the words that have to be censored in the chat  
 Default: ""  
 
 ---
 
-#### g_censorNames
+#### g_censorNames {/* #g_censornames */}
 
 List of the words that have to bo censored from player names.  
 Default: ""  
 
 ---
 
-#### g_censorPenalty
+#### g_censorPenalty {/* #g_censorpenalty */}
 
 Bitflag to control the penalty for a player saying a censored word (see g_censor).  
 1 : Gib the player.  
@@ -133,14 +133,14 @@ Default: 1
 
 ---
 
-#### g_censorMuteTime
+#### g_censorMuteTime {/* #g_censormutetime */}
 
 If g_censorPenalty contains flag 8, the censored player will be automuted for g_censorMuteTime seconds  
 Default: 0  
 
 ---
 
-#### g_autoTempBan
+#### g_autoTempBan {/* #g_autotempban */}
 
 If set, clients kicked for the specified reasons will be tempbanned for g_autoTempBanTime seconds  
 1 : Tempban a player when reaching g_teamDamageRestriction value  
@@ -149,14 +149,14 @@ Default: 0
 
 ---
 
-#### g_autoTempBanTime
+#### g_autoTempBanTime {/* #g_autotempbantime */}
 
 Auto Tempban duration  
 Default: 1800  
 
 ---
 
-#### g_skipCorrection
+#### g_skipCorrection {/* #g_skipcorrection */}
 
 Set this to 1 to enable Neil Toronto s unlagged2 skip correction. This will smooth out the movement of players with high packet loss (to a degree).  
 0 : Disable  
@@ -165,7 +165,7 @@ Default: 1
 
 ---
 
-#### g_teamDamageRestriction
+#### g_teamDamageRestriction {/* #g_teamdamagerestriction */}
 
 If higher than 0, anybody that has this percentage of hits inflicted on a teammate will automatically be kicked. A minimum of g_minhits hits total is required before this is calculated. Client can check their current stats by typing /damage in the console.  
 Default: 0  
@@ -173,7 +173,7 @@ Note: "immunity" or "all" admin flag overwrites this setting.
 
 ---
 
-#### g_minHits
+#### g_minHits {/* #g_minhits */}
 
 Minimum damaging hits required before calculating if player has reached g_teamDamageRestriction  
 Default: 6  
@@ -181,7 +181,7 @@ Note: Medics get -2 hits for every revive
 
 ---
 
-#### skill_soldier, skill_medic, skill_engineer, skill_fieldops, skill_covertops, skill_battlesense, skill_lightweapons
+#### skill_soldier, skill_medic, skill_engineer, skill_fieldops, skill_covertops, skill_battlesense, skill_lightweapons {/* #skill_soldier-skill_medic-skill_engineer-skill_fieldops-skill_covertops-skill_battlesense-skill_lightweapons */}
 
 Allow customization of the experience points necessary to go up in ranks.  
 These settings consist of five space-separated integers indicating the number of XP required in a specific skill, to reach the next rank.  
@@ -194,7 +194,7 @@ Default: 20 50 90 140 200
 
 ---
 
-#### g_maxLevelLightWeapons, g_maxLevelBattleSense, g_maxLevelSoldier, g_maxLevelMedic, g_maxLevelEngineer, g_maxLevelFieldOp, g_maxLevelCovertOp
+#### g_maxLevelLightWeapons, g_maxLevelBattleSense, g_maxLevelSoldier, g_maxLevelMedic, g_maxLevelEngineer, g_maxLevelFieldOp, g_maxLevelCovertOp {/* #g_maxlevellightweapons-g_maxlevelbattlesense-g_maxlevelsoldier-g_maxlevelmedic-g_maxlevelengineer-g_maxlevelfieldop-g_maxlevelcovertop */}
 
 Cvars to cap the max level a player can gain in a skill.
 N!tmod has 5 levels in each skill.
@@ -206,7 +206,7 @@ Note: Level 0 is also counted as a level, so if you want to cap a level to level
 
 ---
 
-#### g_weaponItems
+#### g_weaponItems {/* #g_weaponitems */}
 
 Customize how weapons are dropped upon limbo death  
 0 : Drop no weapons upon limbo death.  
@@ -220,7 +220,7 @@ Default: 1
 
 ---
 
-#### g_maxMapsVotedFor
+#### g_maxMapsVotedFor {/* #g_maxmapsvotedfor */}
 
 Define how many maps are presented to users for voting upon during intermission  
 Default: 6  
@@ -228,7 +228,7 @@ Note: Only available when g_gametype is set to 6 (Map Voting)
 
 ---
 
-#### g_minMapAge
+#### g_minMapAge {/* #g_minmapage */}
 
 Define how long (in map number) a map is ineligible for voting, after it is played  
 Default: 3  
@@ -236,7 +236,7 @@ Note: Only available when g_gametype is set to 6 (Map Voting)
 
 ---
 
-#### g_mapVoteFlags
+#### g_mapVoteFlags {/* #g_mapvoteflags */}
 
 Controls how map voting works  
 1 - Changes the tie breaker so that the map not played in the longest wins  
@@ -250,7 +250,7 @@ Note: Only available when g_gametype is set to 6 (Map Voting)
 
 ---
 
-#### g_excludedMaps
+#### g_excludedMaps {/* #g_excludedmaps */}
 
 Contains list of map to be exclude from the map voting list.  
 The format is ":map1:map2:map3:", where mapX is the .bsp name.  
@@ -259,21 +259,21 @@ Note: Each mapname must be fully surrounded by ":" otherwise the map will not be
 
 ---
 
-#### g_resetXPMapCount
+#### g_resetXPMapCount {/* #g_resetxpmapcount */}
 
 Number of maps need to be played before player XP is reset.  
 Default: 0  
 
 ---
 
-#### g_weaponScriptsDir
+#### g_weaponScriptsDir {/* #g_weaponscriptsdir */}
 
 Defines the directory that weapon scripts will be placed to edit how weapons work  
 Default: ""  
 
 ---
 
-#### g_missileGravity
+#### g_missileGravity {/* #g_missilegravity */}
 
 Sets gravity on missile. This is not a bitflag  
 0 : Disable  
@@ -283,21 +283,21 @@ Default: 0
 
 ---
 
-#### g_missileSpeed
+#### g_missileSpeed {/* #g_missilespeed */}
 
 the speed a panzer/bazooka missile travels at. Set to 0 or 2500 to enable default speed. Values over 300 are ignored if Guided Rockets are enabled.  
 Default: 0  
 
 ---
 
-#### g_missileHealth
+#### g_missileHealth {/* #g_missilehealth */}
 
 Controls the amount of health a panzer/bazooka missile has. Set this to 0 to make missiles indestructible.  
 Default: 5  
 
 ---
 
-#### g_mortarBBox
+#### g_mortarBBox {/* #g_mortarbbox */}
 
 Enable the use of a bounding box (hitbox) around mortar shells, to prevent them from going through small windows and other narrow gaps.  
 0 : Disable  
@@ -306,7 +306,7 @@ Default: 0
 
 ---
 
-#### g_fixedphysics
+#### g_fixedphysics {/* #g_fixedphysics */}
 
 Controls the physics corrections related to player frame rates. Permits to avoid rounding errors. g_fixedPhysicsFPS controls the FPS the added rounding error emulates.  
 0 : Disable  
@@ -315,14 +315,14 @@ Default: 0
 
 ---
 
-#### g_fixedphysicsfps
+#### g_fixedphysicsfps {/* #g_fixedphysicsfps */}
 
 Sets the emulated FPS value when calculating the artificial rounding error used in g_fixedPhysics. The magic numbers to use for this setting are 76, 125, and 333, however, 125 works seems be the most used value  
 Default: 125  
 
 ---
 
-#### g_floodprotect
+#### g_floodprotect {/* #g_floodprotect */}
 
 Toggle flood protecting.  
 Flooding means that a client is sending too many messages to the server (vsays, callvotes, etc...).  
@@ -333,7 +333,7 @@ Note: If you enable g_floodprotect, make sure you set a value for g_floodthresho
 
 ---
 
-#### g_floodthreshold
+#### g_floodthreshold {/* #g_floodthreshold */}
 
 Set the number of messages per second before ignoring the client's messages.  
 Only in effect when g_floodprotect is turned on.  
@@ -341,7 +341,7 @@ Default: 6
 
 ---
 
-#### g_floodWait
+#### g_floodWait {/* #g_floodwait */}
 
 Set the minimum time (in ms) between two messages when g_floodprotect is enabled.  
 1000 ms copies sv_floodprotect (forced to 0 in N!tmod) behaviour.'  
@@ -350,7 +350,7 @@ Note: Should be > 500 in order to keep a public server playable.
 
 ---
 
-#### sv_cheats
+#### sv_cheats {/* #sv_cheats */}
 
 Toggle ETMain cheats (god, give, nofatigue, noclip, notarget, revive) and allow modifying cheat protected cvars.  
 0 : Disable  
@@ -359,7 +359,7 @@ Default: 0
 
 ---
 
-#### g_gametype
+#### g_gametype {/* #g_gametype */}
 
 Sets the gametype that will be played on your server.  
 2 : Objective  
@@ -373,21 +373,21 @@ Default: 4
 
 ---
 
-#### g_TDMScore
+#### g_TDMScore {/* #g_tdmscore */}
 
 If Team Death Match (g_gametype 7) is enabled, this sets the score that a team has to reach to win the round.  
 Default: 500  
 
 ---
 
-#### g_TDMObjBonus
+#### g_TDMObjBonus {/* #g_tdmobjbonus */}
 
 If set higher than 0, defines how many Bonus Points that will be given to the team that completes the final objective.  
 Default: 100  
 
 ---
 
-#### g_TDMOptions
+#### g_TDMOptions {/* #g_tdmoptions */}
 
 Bitflag to control some options specific to Team Death Match gametype.  
 1 : Team score will be inscreased by 1 point per kill. Don't forget to review g_TDMObjBonus and g_TDMScore values if you are using this option.  
@@ -399,14 +399,14 @@ Default: 0
 
 ---
 
-#### g_DMFragLimit
+#### g_DMFragLimit {/* #g_dmfraglimit */}
 
 Set the Death Match gametype Frag Limit (g_gametype 8). Once a player reaches this number of kills, he wins the round.  
 Default: 25  
 
 ---
 
-#### g_DMOptions
+#### g_DMOptions {/* #g_dmoptions */}
 
 Bitflag to control some options specific to Death Match gametype  
 1 : Gives a maximum of 20HP when killing someone  
@@ -428,14 +428,14 @@ Default: 0
 
 ---
 
-#### sv_maxclients
+#### sv_maxclients {/* #sv_maxclients */}
 
 Maximum number of players allowed on the server (Hard limit: 64)  
 Default: 20  
 
 ---
 
-#### g_password
+#### g_password {/* #g_password */}
 
 Server password  
 If set, server will be private and players will need to know the password to connect  
@@ -444,77 +444,77 @@ Default: ""
 
 ---
 
-#### sv_privateClients
+#### sv_privateClients {/* #sv_privateclients */}
 
 Number of private slots on the server (See sv_privatepassword)  
 Default: 0  
 
 ---
 
-#### sv_privatepassword
+#### sv_privatepassword {/* #sv_privatepassword */}
 
 Password for private slots (See sv_privateClients)  
 Default: ""  
 
 ---
 
-#### server_motd0
+#### server_motd0 {/* #server_motd0 */}
 
 Server MOTD line #1.  
 Default: "^7N^1!^7tmod"  
 
 ---
 
-#### server_motd1
+#### server_motd1 {/* #server_motd1 */}
 
 Server MOTD line #2.  
 Default: ""  
 
 ---
 
-#### server_motd2
+#### server_motd2 {/* #server_motd2 */}
 
 Server MOTD line #3.  
 Default: ""  
 
 ---
 
-#### server_motd3
+#### server_motd3 {/* #server_motd3 */}
 
 Server MOTD line #4.  
 Default: ""  
 
 ---
 
-#### server_motd4
+#### server_motd4 {/* #server_motd4 */}
 
 Server MOTD line #5.  
 Default: ""  
 
 ---
 
-#### server_motd5
+#### server_motd5 {/* #server_motd5 */}
 
 Server MOTD line #6.  
 Default: ""  
 
 ---
 
-#### server_motd6
+#### server_motd6 {/* #server_motd6 */}
 
 Server MOTD line #7.  
 Default: ""  
 
 ---
 
-#### refereePassword
+#### refereePassword {/* #refereepassword */}
 
 Sets the server's referee password. Players who know this password can get referee status using /ref *password* in their client console.  
 Default: ""  
 
 ---
 
-#### g_teamForceBalan
+#### g_teamForceBalan {/* #g_teamforcebalan */}
 
 If enabled, the game will not allow a team to have more than 1 player more than the other team.  
 This has no effect on players with the "balanceimmunity" or "all" admin flag.  
@@ -525,14 +525,14 @@ Note: This option will neither perfom any auto-team-balancing nor move any playe
 
 ---
 
-#### g_warmup
+#### g_warmup {/* #g_warmup */}
 
 Warmup duration in seconds  
 Default: 60  
 
 ---
 
-#### g_doWarmup
+#### g_doWarmup {/* #g_dowarmup */}
 
 Toggle Warmup. If enabled, waits for match_minplayers players before starting warmup countdown.  
 0 : Disable  
@@ -541,7 +541,7 @@ Default: 1
 
 ---
 
-#### g_altStopwatchMode
+#### g_altStopwatchMode {/* #g_altstopwatchmode */}
 
 Toggle Alternative Stopwatch Gametype. If enabled, players will swap teams after each round.  
 0 : Disable  
@@ -550,7 +550,7 @@ Default: 0
 
 ---
 
-#### g_noTeamSwitching
+#### g_noTeamSwitching {/* #g_noteamswitching */}
 
 If enabled, players can't switch teams when the match is in progress, they will have to wait until warmup to switch.  
 0 : Disable  
@@ -559,21 +559,21 @@ Default: 0
 
 ---
 
-#### g_userAlliedRespawnTime
+#### g_userAlliedRespawnTime {/* #g_useralliedrespawntime */}
 
 Allied team respawn time in milliseconds  
 Default: 0  
 
 ---
 
-#### g_userAxisRespawnTime
+#### g_userAxisRespawnTime {/* #g_useraxisrespawntime */}
 
 Allied team respawn time in milliseconds  
 Default: 0  
 
 ---
 
-#### g_userTimeLimit
+#### g_userTimeLimit {/* #g_usertimelimit */}
 
 Allows overriding default map time limit with your own value.  
 Default: 0  
@@ -581,42 +581,42 @@ Note: This cvar has no effect during "Stopwatch" gametype, and can't be set to l
 
 ---
 
-#### g_log
+#### g_log {/* #g_log */}
 
 General log file name  
 Default: ""  
 
 ---
 
-#### g_logSync
+#### g_logSync {/* #g_logsync */}
 
 Synchronize log files  
 Default: 0  
 
 ---
 
-#### g_logCrash
+#### g_logCrash {/* #g_logcrash */}
 
 Log file name when server crash  
 Default: crash.log  
 
 ---
 
-#### n_LogCurrentTime
+#### n_LogCurrentTime {/* #n_logcurrenttime */}
 
 If enabled, real time will be printed in logs instead of server uptime.  
 Default: 0  
 
 ---
 
-#### g_banIPs
+#### g_banIPs {/* #g_banips */}
 
 Stores IP and IP masks for g_filterban  
 Default: ""  
 
 ---
 
-#### g_filterBan
+#### g_filterBan {/* #g_filterban */}
 
 Filter connect packets IP's  
 You can manage IP Filter list with these commands (rcon):  
@@ -634,14 +634,14 @@ Note: IP List is stored in g_banIPs cvar, the size of the cvar string buffer is 
 
 ---
 
-#### g_speed
+#### g_speed {/* #g_speed */}
 
 Overall player speed  
 Default: 320  
 
 ---
 
-#### g_gravity
+#### g_gravity {/* #g_gravity */}
 
 Defines gravity ammount  
 Server sets this value to 800 (default) when map restarts  
@@ -650,21 +650,21 @@ Note: N!tmod uses "Real Gravity", which means this value will have effect on eve
 
 ---
 
-#### g_knockback
+#### g_knockback {/* #g_knockback */}
 
 Knockback value when receiving damage  
 Default: 1000  
 
 ---
 
-#### g_forcerespawn
+#### g_forcerespawn {/* #g_forcerespawn */}
 
 If higher than 0, sets the delay in seconds before a wounded player will be forced to tapout  
 Default: 0  
 
 ---
 
-#### g_debugBullets
+#### g_debugBullets {/* #g_debugbullets */}
 
 BitFlag to control debug system trace.  
 0 : Disable  
@@ -673,21 +673,21 @@ Default: 0
 
 ---
 
-#### g_complaintlimit
+#### g_complaintlimit {/* #g_complaintlimit */}
 
 Maximum number of complaints against a player before he gets kicked from the server  
 Default: 6  
 
 ---
 
-#### g_ipcomplaintlimit
+#### g_ipcomplaintlimit {/* #g_ipcomplaintlimit */}
 
 Sets the maximum number of unique complaints a player (by IP address) may have filed against them before they are automatically kicked  
 Default: 3  
 
 ---
 
-#### g_disableComplaints
+#### g_disableComplaints {/* #g_disablecomplaints */}
 
 Bitflag to disable friendly fire complaints for certain weapons  
 1 : Complaints disabled for friendly Landmine kills  
@@ -698,7 +698,7 @@ Default: 0
 
 ---
 
-#### g_filtercams
+#### g_filtercams {/* #g_filtercams */}
 
 Removes players from camera views. If enabled, players will not be displayed on limbo objective camera  
 0 : Disable  
@@ -707,7 +707,7 @@ Default: 0
 
 ---
 
-#### g_maxlives
+#### g_maxlives {/* #g_maxlives */}
 
 If enabled, this sets the maximum number of respawn allowed per round  
 Set to 0 to disable  
@@ -716,14 +716,14 @@ Note: g_alliedmaxlives and g_axismaxlives take precedence on this cvar.
 
 ---
 
-#### g_maxlivesRespawnPenalty
+#### g_maxlivesRespawnPenalty {/* #g_maxlivesrespawnpenalty */}
 
 Number of respawns a player has to miss after he has ran out of lives (see g_maxlives, g_axismaxlives, g_alliedmaxlives) before respawning again.  
 Default: 0  
 
 ---
 
-#### g_alliedmaxlives
+#### g_alliedmaxlives {/* #g_alliedmaxlives */}
 
 If enabled, this sets the maximum number of respawn allowed per round for allied team players  
 Set to 0 to disable  
@@ -732,7 +732,7 @@ Note: Takes precedence on g_maxlives.
 
 ---
 
-#### g_axismaxlives
+#### g_axismaxlives {/* #g_axismaxlives */}
 
 If enabled, this sets the maximum number of respawn allowed per round for axis team players  
 Set to 0 to disable  
@@ -741,7 +741,7 @@ Note: Takes precedence on g_maxlives.
 
 ---
 
-#### g_enforcemaxlives
+#### g_enforcemaxlives {/* #g_enforcemaxlives */}
 
 Toggle "Max Lives Enforcement Temp Ban."  
 Players will be temporarily banned from the server until next round starts, to make sure they don't reconnect to get new lives.  
@@ -751,7 +751,7 @@ Default: 1
 
 ---
 
-#### g_voiceChatsAllowed
+#### g_voiceChatsAllowed {/* #g_voicechatsallowed */}
 
 Maximum number of voicechats allowed before the voicechat flood protection is triggered.  
 Default: 4  
@@ -759,7 +759,7 @@ Note: This has no effect on players with the "nocensorflood" or "all" admin flag
 
 ---
 
-#### g_fastres
+#### g_fastres {/* #g_fastres */}
 
 If enabled, player will be able to move instantly after being revived, and his invulnerability will be reduced to 1 second instead of 3.  
 0 : Disable  
@@ -768,7 +768,7 @@ Default: 0
 
 ---
 
-#### pmove_fixed
+#### pmove_fixed {/* #pmove_fixed */}
 
 Control the use of pmove_msecs for frame computation  
 0 : Disable  
@@ -777,14 +777,14 @@ Default: 0
 
 ---
 
-#### pmove_msec
+#### pmove_msec {/* #pmove_msec */}
 
 Adjust the frame time (in ms) used for frame calculation.  
 Default: 8  
 
 ---
 
-#### g_antilag
+#### g_antilag {/* #g_antilag */}
 
 Toggle ETPro Antilag.  
 0 : Disable  
@@ -797,7 +797,7 @@ Note: If debug options are enabled, a lot of entities will be used and it will m
 
 ---
 
-#### g_inactivity
+#### g_inactivity {/* #g_inactivity */}
 
 Delay in seconds before sending an inactive player (not moving/shooting) to spectators.  
 If enabled, a warning message is sent to the inactive player after half of the specified time.  
@@ -806,7 +806,7 @@ Default: 0
 
 ---
 
-#### g_spectatorInactivity
+#### g_spectatorInactivity {/* #g_spectatorinactivity */}
 
 Delay in seconds before kicking a spectator for inactivity.  
 If enabled, a warning message is sent to the inactive spectator after half of the specified time.  
@@ -816,7 +816,7 @@ Note: Players with the "inactivity" admin flag will NEVER be kicked
 
 ---
 
-#### g_inactivityOptions
+#### g_inactivityOptions {/* #g_inactivityoptions */}
 
 Bitflag to set various inactivity options. (See g_spectatorInactivity and g_inactivity)  
 1 : Do not drop spectators if they are following a player  
@@ -827,7 +827,7 @@ Note: Players with the "inactivity" admin flag will NEVER be kicked
 
 ---
 
-#### match_latejoin
+#### match_latejoin {/* #match_latejoin */}
 
 Allowing players to join a match in progress  
 0 : Disable  
@@ -836,14 +836,14 @@ Default: 1
 
 ---
 
-#### match_minplayers
+#### match_minplayers {/* #match_minplayers */}
 
 Sets the minimum number of players required for match to begin.  
 Default: 4  
 
 ---
 
-#### match_mutespecs
+#### match_mutespecs {/* #match_mutespecs */}
 
 Mutes the spectators.  
 0 : Disable  
@@ -852,21 +852,21 @@ Default: 0
 
 ---
 
-#### match_readypercent
+#### match_readypercent {/* #match_readypercent */}
 
 Sets the percentage of players required to be ready  
 Default: 100  
 
 ---
 
-#### match_timeoutcount
+#### match_timeoutcount {/* #match_timeoutcount */}
 
 Sets the maximum number of times non-referees can pause the match.  
 Default: 3  
 
 ---
 
-#### match_timeoutlength
+#### match_timeoutlength {/* #match_timeoutlength */}
 
 Timeout/pauses duration in seconds  
 Default: 180  
@@ -874,7 +874,7 @@ Note: Set to -1 for infinite timeout (match will only be resumed when someone un
 
 ---
 
-#### match_warmupDamage
+#### match_warmupDamage {/* #match_warmupdamage */}
 
 Warmup damage options  
 0 : No damage during warmup  
@@ -884,49 +884,49 @@ Default: 1
 
 ---
 
-#### g_medicChargeTime
+#### g_medicChargeTime {/* #g_medicchargetime */}
 
 Time, in milliseconds, it takes for Medic class charge bar to refill  
 Default: 45000  
 
 ---
 
-#### g_engineerChargeTime
+#### g_engineerChargeTime {/* #g_engineerchargetime */}
 
 Time, in milliseconds, it takes for Engineer class charge bar to refill  
 Default: 30000  
 
 ---
 
-#### g_LTChargeTime
+#### g_LTChargeTime {/* #g_ltchargetime */}
 
 Time, in milliseconds, it takes for Field Ops class charge bar to refill  
 Default: 40000  
 
 ---
 
-#### g_soldierChargeTime
+#### g_soldierChargeTime {/* #g_soldierchargetime */}
 
 Time, in milliseconds, it takes for Soldier class charge bar to refill  
 Default: 20000  
 
 ---
 
-#### g_covertopsChargeTime
+#### g_covertopsChargeTime {/* #g_covertopschargetime */}
 
 Time, in milliseconds, it takes for Covert Ops class charge bar to refill  
 Default: 30000  
 
 ---
 
-#### g_heavyWeaponRestriction
+#### g_heavyWeaponRestriction {/* #g_heavyweaponrestriction */}
 
 For each heavy weapon, this defines the percentage of players, per team, who can use it, based on the total number of player in a team.  
 Default: 100  
 
 ---
 
-#### team_panzerRestriction
+#### team_panzerRestriction {/* #team_panzerrestriction */}
 
 Minimum percentage of connected players needed to enable Panzerfaust.  
 If set to 10 on a 20 player slot server up to 2 players can use panzer.  
@@ -936,7 +936,7 @@ Note: If enabled, takes precedence over "team_maxPanzers" cvar.
 
 ---
 
-#### team_maxPanzers
+#### team_maxPanzers {/* #team_maxpanzers */}
 
 Maximum number of players per team allowed to use Panzerfaust  
 Set to -1 to disable restriction  
@@ -945,7 +945,7 @@ Note: "team_panzerRestriction" takes precedence over this one.
 
 ---
 
-#### team_maxMG42s
+#### team_maxMG42s {/* #team_maxmg42s */}
 
 Maximum number of players per team allowed to use Mobile MG42  
 Set to -1 to disable restriction  
@@ -953,7 +953,7 @@ Default: -1
 
 ---
 
-#### team_maxFlamers
+#### team_maxFlamers {/* #team_maxflamers */}
 
 Maximum number of players per team allowed to use Flamethrower  
 Set to -1 to disable restriction  
@@ -961,7 +961,7 @@ Default: -1
 
 ---
 
-#### team_maxMortars
+#### team_maxMortars {/* #team_maxmortars */}
 
 Maximum number of players per team allowed to use Mortar  
 Set to -1 to disable restriction  
@@ -969,7 +969,7 @@ Default: -1
 
 ---
 
-#### team_maxriflegrenades
+#### team_maxriflegrenades {/* #team_maxriflegrenades */}
 
 Maximum number of players per team allowed to use K43/Garand's grenade lanucher  
 Set to -1 to disable restriction  
@@ -977,7 +977,7 @@ Default: -1
 
 ---
 
-#### team_maxTripmines
+#### team_maxTripmines {/* #team_maxtripmines */}
 
 Maximum number of tripmines per team  
 This value has to be set. A value of "0" will not allow any tripmine to be set!  
@@ -985,7 +985,7 @@ Default: 5
 
 ---
 
-#### team_maxLandmines
+#### team_maxLandmines {/* #team_maxlandmines */}
 
 Maximum number of landmines per team  
 This value has to be set. A value of "0" will not allow any landmine to be set!  
@@ -993,21 +993,21 @@ Default: 10
 
 ---
 
-#### team_airstrikeTime
+#### team_airstrikeTime {/* #team_airstriketime */}
 
 Minimum delay, in seconds, between airstrikes per team.  
 Default: 10  
 
 ---
 
-#### team_artyTime
+#### team_artyTime {/* #team_artytime */}
 
 Minimum delay, in seconds, between artillery strikes (Firing For Effect) per team.  
 Default: 10  
 
 ---
 
-#### team_maxSoldiers
+#### team_maxSoldiers {/* #team_maxsoldiers */}
 
 Maximum number of Soldiers allowed per team  
 Set to -1 to disable restriction  
@@ -1015,7 +1015,7 @@ Default: -1
 
 ---
 
-#### team_maxMedics
+#### team_maxMedics {/* #team_maxmedics */}
 
 Maximum number of Medics allowed per team  
 Set to -1 to disable restriction  
@@ -1023,7 +1023,7 @@ Default: -1
 
 ---
 
-#### team_maxEngineers
+#### team_maxEngineers {/* #team_maxengineers */}
 
 Maximum number of Engineers allowed per team  
 Set to -1 to disable restriction  
@@ -1031,7 +1031,7 @@ Default: -1
 
 ---
 
-#### team_maxFieldops
+#### team_maxFieldops {/* #team_maxfieldops */}
 
 Maximum number of FieldOps allowed per team  
 Set to -1 to disable restriction  
@@ -1039,7 +1039,7 @@ Default: -1
 
 ---
 
-#### team_maxCovertops
+#### team_maxCovertops {/* #team_maxcovertops */}
 
 Maximum number of CovertOps allowed per team  
 Set to -1 to disable restriction  
@@ -1047,7 +1047,7 @@ Default: -1
 
 ---
 
-#### team_maxplayers
+#### team_maxplayers {/* #team_maxplayers */}
 
 Maximum number of players allowed per team  
 Set to 0 to disable restriction  
@@ -1055,7 +1055,7 @@ Default: 0
 
 ---
 
-#### team_nocontrols
+#### team_nocontrols {/* #team_nocontrols */}
 
 Disallow to use of team commands  
 0 : Disable  
@@ -1064,7 +1064,7 @@ Default: 1
 
 ---
 
-#### g_landminetimeout
+#### g_landminetimeout {/* #g_landminetimeout */}
 
 If enabled, a player's landmines will be removed when he disconnects or joins another team.  
 0 : Disable  
@@ -1073,7 +1073,7 @@ Default: 1
 
 ---
 
-#### vote_allow_comp
+#### vote_allow_comp {/* #vote_allow_comp */}
 
 Toggle "Competition Settings" voting (requires default_comp.cfg on the server)  
 0 : Disable  
@@ -1082,7 +1082,7 @@ Default: 1
 
 ---
 
-#### vote_allow_gametype
+#### vote_allow_gametype {/* #vote_allow_gametype */}
 
 Toggle gametype voting  
 0 : Disable  
@@ -1091,7 +1091,7 @@ Default: 1
 
 ---
 
-#### vote_allow_kick
+#### vote_allow_kick {/* #vote_allow_kick */}
 
 Toggle voting to kick players  
 0 : Disable  
@@ -1100,7 +1100,7 @@ Default: 1
 
 ---
 
-#### vote_allow_map
+#### vote_allow_map {/* #vote_allow_map */}
 
 Toggle map voting  
 0 : Disable  
@@ -1109,7 +1109,7 @@ Default: 1
 
 ---
 
-#### vote_allow_matchreset
+#### vote_allow_matchreset {/* #vote_allow_matchreset */}
 
 Toggle match reset voting  
 0 : Disable  
@@ -1118,7 +1118,7 @@ Default: 1
 
 ---
 
-#### vote_allow_mutespecs
+#### vote_allow_mutespecs {/* #vote_allow_mutespecs */}
 
 Toggle voting to mute spectators  
 0 : Disable  
@@ -1127,7 +1127,7 @@ Default: 1
 
 ---
 
-#### vote_allow_nextmap
+#### vote_allow_nextmap {/* #vote_allow_nextmap */}
 
 Toggle nextmap voting  
 0 : Disable  
@@ -1136,7 +1136,7 @@ Default: 1
 
 ---
 
-#### vote_allow_pub
+#### vote_allow_pub {/* #vote_allow_pub */}
 
 Toggle "Public Settings" voting (requires default_pub.cfg on the server)  
 0 : Disable  
@@ -1145,7 +1145,7 @@ Default: 1
 
 ---
 
-#### vote_allow_referee
+#### vote_allow_referee {/* #vote_allow_referee */}
 
 Toggle voring to referee players  
 0 : Disable  
@@ -1154,7 +1154,7 @@ Default: 0
 
 ---
 
-#### vote_allow_shuffleteams
+#### vote_allow_shuffleteams {/* #vote_allow_shuffleteams */}
 
 Toggle voting to shuffle teams & restart match  
 0 : Disable  
@@ -1163,7 +1163,7 @@ Default: 1
 
 ---
 
-#### vote_allow_shuffleteams_norestart
+#### vote_allow_shuffleteams_norestart {/* #vote_allow_shuffleteams_norestart */}
 
 Toggle voting to shuffle teams WITHOUT restarting match  
 0 : Disable  
@@ -1172,7 +1172,7 @@ Default: 1
 
 ---
 
-#### vote_allow_swapteams
+#### vote_allow_swapteams {/* #vote_allow_swapteams */}
 
 Toggle voting to swap teams WITHOUT restarting match  
 0 : Disable  
@@ -1181,7 +1181,7 @@ Default: 1
 
 ---
 
-#### vote_allow_swapteamsrestart
+#### vote_allow_swapteamsrestart {/* #vote_allow_swapteamsrestart */}
 
 Toggle voting to swap teams & restart match  
 0 : Disable  
@@ -1190,7 +1190,7 @@ Default: 1
 
 ---
 
-#### vote_allow_friendlyfire
+#### vote_allow_friendlyfire {/* #vote_allow_friendlyfire */}
 
 Toggle Friendly Fire voting  
 0 : Disable  
@@ -1199,7 +1199,7 @@ Default: 1
 
 ---
 
-#### vote_allow_timelimit
+#### vote_allow_timelimit {/* #vote_allow_timelimit */}
 
 Toggle voting to modify timelimit  
 0 : Disable  
@@ -1208,7 +1208,7 @@ Default: 0
 
 ---
 
-#### vote_allow_warmupdamage
+#### vote_allow_warmupdamage {/* #vote_allow_warmupdamage */}
 
 Toggle voting to modify warmup damage settings  
 0 : Disable  
@@ -1217,7 +1217,7 @@ Default: 1
 
 ---
 
-#### vote_allow_antilag
+#### vote_allow_antilag {/* #vote_allow_antilag */}
 
 Toggle voting to modify antilag status  
 0 : Disable  
@@ -1226,7 +1226,7 @@ Default: 1
 
 ---
 
-#### vote_allow_balancedteams
+#### vote_allow_balancedteams {/* #vote_allow_balancedteams */}
 
 Toggle voting to modify balanced teams status  
 0 : Disable  
@@ -1235,7 +1235,7 @@ Default: 1
 
 ---
 
-#### vote_allow_muting
+#### vote_allow_muting {/* #vote_allow_muting */}
 
 Toggle voting to mute players  
 0 : Disable  
@@ -1244,7 +1244,7 @@ Default: 1
 
 ---
 
-#### vote_allow_surrender
+#### vote_allow_surrender {/* #vote_allow_surrender */}
 
 Toggle voting to surrender  
 0 : Disable  
@@ -1253,7 +1253,7 @@ Default: 1
 
 ---
 
-#### vote_allow_restartcampaign
+#### vote_allow_restartcampaign {/* #vote_allow_restartcampaign */}
 
 Toggle campaing restart voting  
 0 : Disable  
@@ -1262,7 +1262,7 @@ Default: 1
 
 ---
 
-#### vote_allow_nextcampaign
+#### vote_allow_nextcampaign {/* #vote_allow_nextcampaign */}
 
 Toggle next campaign voting  
 0 : Disable  
@@ -1271,7 +1271,7 @@ Default: 1
 
 ---
 
-#### vote_allow_poll
+#### vote_allow_poll {/* #vote_allow_poll */}
 
 Toggle Poll voting  
 0 : Disable  
@@ -1280,7 +1280,7 @@ Default: 1
 
 ---
 
-#### vote_allow_maprestart
+#### vote_allow_maprestart {/* #vote_allow_maprestart */}
 
 Allow the vote to restart the map  
 0 : Disable  
@@ -1289,7 +1289,7 @@ Default: 1
 
 ---
 
-#### vote_limit
+#### vote_limit {/* #vote_limit */}
 
 Maximum number of votes a player can call per map.  
 Default: 3  
@@ -1297,14 +1297,14 @@ Note: This has no effect on players with the "novotelimit" admin flag
 
 ---
 
-#### vote_percent
+#### vote_percent {/* #vote_percent */}
 
 Percentage of "YES" votes required for a vote to pass.  
 Default: 50  
 
 ---
 
-#### g_voting
+#### g_voting {/* #g_voting */}
 
 Bitflag to modify voting options  
 1 : Use total voters instead of total players to decide if a vote passes  
@@ -1314,7 +1314,7 @@ Default: 1
 
 ---
 
-#### g_autoFireteams
+#### g_autoFireteams {/* #g_autofireteams */}
 
 If enabled, players will be proposed to join a fireteam when they join a team.  
 0 : Disable  
@@ -1323,14 +1323,14 @@ Default: 1
 
 ---
 
-#### g_shove
+#### g_shove {/* #g_shove */}
 
 Player shoving (pushing) distance  
 Default: 80  
 
 ---
 
-#### g_shoveNoZ
+#### g_shoveNoZ {/* #g_shovenoz */}
 
 If enabled, can't shove (push) players vertically  
 0 : Disable  
@@ -1339,7 +1339,7 @@ Default: 0
 
 ---
 
-#### g_playDead
+#### g_playDead {/* #g_playdead */}
 
 Toggle playing dead with /playdead  
 0 : Disable  
@@ -1348,7 +1348,7 @@ Default: 1
 
 ---
 
-#### g_dragCorpse
+#### g_dragCorpse {/* #g_dragcorpse */}
 
 Enable/disable corpse dragging. (Standing over a wounded player and pressing F(activate) to drag the corpse)  
 0 : Disable  
@@ -1357,7 +1357,7 @@ Default: 1
 
 ---
 
-#### g_classChange
+#### g_classChange {/* #g_classchange */}
 
 Toggles class stealing. (Standing over a dead teammate and pressing F(activate) to steal his class).  
 0 : Disable  
@@ -1366,7 +1366,7 @@ Default: 0
 
 ---
 
-#### g_forceLimboHealth
+#### g_forceLimboHealth {/* #g_forcelimbohealth */}
 
 Modify the force limbo health (damage that has to be givent to a player when he's waiting for a medic before he's forced to tapout)  
 Default: 75  
@@ -1374,7 +1374,7 @@ Note: If set to 0, the default value (75) will be used
 
 ---
 
-#### g_privateMessages
+#### g_privateMessages {/* #g_privatemessages */}
 
 If enabled, players can send private messages on the server.  
 0 : Disable  
@@ -1383,7 +1383,7 @@ Default: 1
 
 ---
 
-#### g_XPSave
+#### g_XPSave {/* #g_xpsave */}
 
 Bitflag to modify XPSave options  
 0 : Disable XPSave  
@@ -1396,7 +1396,7 @@ Note: XPSave system requires a valid SQLite database!
 
 ---
 
-#### g_XPSaveMaxAge
+#### g_XPSaveMaxAge {/* #g_xpsavemaxage */}
 
 XPSave duration in seconds.  
 Default: 86400  
@@ -1404,14 +1404,14 @@ Note: This value is ignored if g_XPSave flag 4 is enabled!
 
 ---
 
-#### g_maxXP
+#### g_maxXP {/* #g_maxxp */}
 
 Reset XP when a player reach this limit. (-1 to disable)  
 Default: -1  
 
 ---
 
-#### g_XPDecay
+#### g_XPDecay {/* #g_xpdecay */}
 
 Decays players XP on the server when set to 1.  
 1 : Enable XP Decay  
@@ -1426,7 +1426,7 @@ Default: 0
 
 ---
 
-#### g_XPDecayRate
+#### g_XPDecayRate {/* #g_xpdecayrate */}
 
 Rate, in skill points per second, that XP skill points, for each skill, will decay when g_XPDecay is enabled.  
 Setting this to 0.2 would result in a player losing 12 points per minute IN ALL SKILLS,  
@@ -1435,14 +1435,14 @@ Default: 0.0
 
 ---
 
-#### g_XPDecayFloor
+#### g_XPDecayFloor {/* #g_xpdecayfloor */}
 
 Minimum floor that any skill XP can be reduced to by g_XPDecay.  
 Default: 0  
 
 ---
 
-#### g_fieldOps
+#### g_fieldOps {/* #g_fieldops */}
 
 Bitflag to modify FieldOps class options  
 1 : Field Ops do not spawn with binoculars if they have level 0 Battle Sense  
@@ -1452,7 +1452,7 @@ Default: 0
 
 ---
 
-#### g_friendlyFire
+#### g_friendlyFire {/* #g_friendlyfire */}
 
 Bitflag to modify friendly fire options.  
 1 : Enable friendly fire  
@@ -1468,7 +1468,7 @@ Default: 1
 
 ---
 
-#### g_countryflags
+#### g_countryflags {/* #g_countryflags */}
 
 Enable/Disable country flags system.  
 You need a valid GeoIP.dat in the nitmod path of your server.  
@@ -1480,14 +1480,14 @@ Default: 0
 
 ---
 
-#### g_goomba
+#### g_goomba {/* #g_goomba */}
 
 Damage inflicted to a player when jumping or landing on him. (see also g_goombaFlags)  
 Default: 10  
 
 ---
 
-#### g_goombaFlags
+#### g_goombaFlags {/* #g_goombaflags */}
 
 Bitflag to modify Goomba behaviour. (see also g_goomba)  
 1 : goomba can only damage enemies  
@@ -1499,28 +1499,28 @@ Default: 25
 
 ---
 
-#### g_spawnInvul
+#### g_spawnInvul {/* #g_spawninvul */}
 
 Time, in seconds, players will be invulnerable after respawning.  
 Default: 3  
 
 ---
 
-#### g_intermissionTime
+#### g_intermissionTime {/* #g_intermissiontime */}
 
 Time in seconds before loading the next map after the end of a round.  
 Default: 60  
 
 ---
 
-#### g_intermissionReadyPercent
+#### g_intermissionReadyPercent {/* #g_intermissionreadypercent */}
 
 Percentage of players (excluding spectators) who need to hit the "READY" button to load the next map without having to wait g_intermissionTime value.  
 Default: 100  
 
 ---
 
-#### g_antiwarp
+#### g_antiwarp {/* #g_antiwarp */}
 
 If enabled, N!tmod will keep players from "warping" using ETPro-style AntiWarp(higly recommended)  
 What is "warping"?  
@@ -1534,7 +1534,7 @@ Default: 1
 
 ---
 
-#### g_shortcuts
+#### g_shortcuts {/* #g_shortcuts */}
 
 Enable shortcuts in chat  
 0 : Disable  
@@ -1555,7 +1555,7 @@ Default: 1
 
 ---
 
-#### g_fear
+#### g_fear {/* #g_fear */}
 
 If a player selfkills (/kill) withing g_fear milliseconds after taking damage from an enemy, the kill will be awarded to this enemy.  
 Set to 0 to disable  
@@ -1563,7 +1563,7 @@ Default: 2000
 
 ---
 
-#### g_slashKill
+#### g_slashKill {/* #g_slashkill */}
 
 Options for self-kill  
 1 : Half a charge bar on /kill  
@@ -1577,14 +1577,14 @@ Default: 0
 
 ---
 
-#### sv_fps
+#### sv_fps {/* #sv_fps */}
 
 Number of frames the server will generate by second  
 Default: 20  
 
 ---
 
-#### g_truePing
+#### g_truePing {/* #g_trueping */}
 
 Enable true ping calculation based on client commands timestamps.  
 0 : Disable  
@@ -1593,7 +1593,7 @@ Default: 0
 
 ---
 
-#### g_poison
+#### g_poison {/* #g_poison */}
 
 Enable or disable Poison syringes for level 4 light weapons.  
 0 : Disable  
@@ -1605,7 +1605,7 @@ Default: 0
 
 ---
 
-#### g_drawAttackerHP
+#### g_drawAttackerHP {/* #g_drawattackerhp */}
 
 If enabled, players will see their last killer's remaining HP when they die.  
 0 : Disable  
@@ -1614,7 +1614,7 @@ Default: 1
 
 ---
 
-#### g_medics
+#### g_medics {/* #g_medics */}
 
 Bitflag to modify Medic class behaviour.  
 1: Medics can�t pick up their own med packs at all  
@@ -1629,14 +1629,14 @@ Default: 0
 
 ---
 
-#### g_msgs
+#### g_msgs {/* #g_msgs */}
 
 Delay, in seconds, between banner messages. (see g_msgpos)  
 Default: 0  
 
 ---
 
-#### g_msgpos
+#### g_msgpos {/* #g_msgpos */}
 
 Banners location (see g_msgs)  
 0 : Chat  
@@ -1646,7 +1646,7 @@ Default: 0
 
 ---
 
-#### g_constructiblexpsharing
+#### g_constructiblexpsharing {/* #g_constructiblexpsharing */}
 
 If enabled, every enginner that builds a constructible objective will receive XP points.  
 This prevents a player from receiving all the XP when finishing a partly built construction while another engineer might have spent a "lot" of time building the rest  
@@ -1656,7 +1656,7 @@ Default: 0
 
 ---
 
-#### g_asblock
+#### g_asblock {/* #g_asblock */}
 
 Airstrike blocking options  
 1 : Make an announcement whenever an airstrike is blocked.  
@@ -1666,7 +1666,7 @@ Default: 0
 
 ---
 
-#### g_canisterKick
+#### g_canisterKick {/* #g_canisterkick */}
 
 Allow player to kick canisters on the floor.  
 0 : Disable  
@@ -1675,7 +1675,7 @@ Default: 0
 
 ---
 
-#### g_canisterKickOwner
+#### g_canisterKickOwner {/* #g_canisterkickowner */}
 
 Sets the kicker as the owner of the canister kicked.  
 0 : Disable  
@@ -1684,7 +1684,7 @@ Default: 0
 
 ---
 
-#### g_doubleJump
+#### g_doubleJump {/* #g_doublejump */}
 
 Toggle double jump  
 0 : Disable  
@@ -1694,14 +1694,14 @@ Default: 0
 
 ---
 
-#### g_DJHeight
+#### g_DJHeight {/* #g_djheight */}
 
 If double jump is enabled, this defines how many times higher the the second jump will be.  
 Default: 1.4  
 
 ---
 
-#### g_rockets
+#### g_rockets {/* #g_rockets */}
 
 Bitflag to modify Panzerfaust rockets behavior.  
 1 : Guided Panzer rockets  
@@ -1710,7 +1710,7 @@ Default: 0
 
 ---
 
-#### g_skills
+#### g_skills {/* #g_skills */}
 
 Bitflag to keep a specific class award when playing other classes  
 1 : Flak Jacket carries over  
@@ -1721,7 +1721,7 @@ Default: 0
 
 ---
 
-#### g_missileCams
+#### g_missileCams {/* #g_missilecams */}
 
 Bitflag to enable missile cameras (Clients can disable cameras with cg_drawCam 0)  
 1 : Enable Panzer Cam  
@@ -1732,7 +1732,7 @@ Default: 0
 
 ---
 
-#### g_war
+#### g_war {/* #g_war */}
 
 Enable a War Mode  
 1 : Enable Panzer War  
@@ -1745,7 +1745,7 @@ Note: The value of this cvar will be modified when using !panzerwar and !sniperw
 
 ---
 
-#### n_sniperWarOptions
+#### n_sniperWarOptions {/* #n_sniperwaroptions */}
 
 Bitflag to control some SniperWar options  
 1 : Players will spawn with binoculars  
@@ -1756,7 +1756,7 @@ Note: These options are only used when SniperWar Mode is enabled. See g_war
 
 ---
 
-#### g_announcer
+#### g_announcer {/* #g_announcer */}
 
 Bitflag to enable some announces.  
 1 : Enable Killing Spree announce  
@@ -1771,14 +1771,14 @@ Default: 127
 
 ---
 
-#### g_multikillTime
+#### g_multikillTime {/* #g_multikilltime */}
 
 Maximum delay, in milliseconds, between two kills, to count as a multikill  
 Default: 2000  
 
 ---
 
-#### g_adrenaline
+#### g_adrenaline {/* #g_adrenaline */}
 
 Bitflag to modify adrenaline behaviour (See also g_adrenClasses)  
 1 : Players don't spawn with adrenaline  
@@ -1788,7 +1788,7 @@ Default: 0
 
 ---
 
-#### g_adrenClasses
+#### g_adrenClasses {/* #g_adrenclasses */}
 
 Bitflag cvar to allow adrenaline to carry-over in specific classes.  
 1 : Soldier  
@@ -1800,14 +1800,14 @@ Default: 2
 
 ---
 
-#### omnibot_path
+#### omnibot_path {/* #omnibot_path */}
 
 Absolute path to your Omni-bot installation.  
 Default: ""  
 
 ---
 
-#### omnibot_enable
+#### omnibot_enable {/* #omnibot_enable */}
 
 Toggle Omni-Bot support on the server.  
 0 : Disable  
@@ -1816,7 +1816,7 @@ Default: 0
 
 ---
 
-#### omnibot_flags
+#### omnibot_flags {/* #omnibot_flags */}
 
 Various Omni-Bot options  
 1 : Disable XPSave for bots  
@@ -1831,7 +1831,7 @@ Default: 0
 
 ---
 
-#### g_noAttackInvul
+#### g_noAttackInvul {/* #g_noattackinvul */}
 
 If enabled, player will lose his spawn protection if he starts attacking before g_spawnInvul seconds.  
 0 : Disable  
@@ -1840,14 +1840,14 @@ Default: 0
 
 ---
 
-#### ip_max_clients
+#### ip_max_clients {/* #ip_max_clients */}
 
 Maximum number of connections allowed from the same IP address. Set to 0 to disable.  
 Default: 3  
 
 ---
 
-#### g_pickAnyWeapon
+#### g_pickAnyWeapon {/* #g_pickanyweapon */}
 
 If enabled, players can pick any weapon on the ground, no matter what class they are playing.  
 0 : Disable  
@@ -1857,7 +1857,7 @@ Note: Some weapons may be unavailable due to some weapon restrictions settings
 
 ---
 
-#### g_noReload
+#### g_noReload {/* #g_noreload */}
 
 Unlimited Ammo (No need to reload, clips are refilled automaticly when empty)  
 0 : Disable  
@@ -1866,7 +1866,7 @@ Default: 0
 
 ---
 
-#### g_noCharge
+#### g_noCharge {/* #g_nocharge */}
 
 No charge usage  
 0 : Disable  
@@ -1875,7 +1875,7 @@ Default: 0
 
 ---
 
-#### g_instantSpawn
+#### g_instantSpawn {/* #g_instantspawn */}
 
 Players respawn instantly, respawn times are ignored  
 0 : Disable  
@@ -1884,7 +1884,7 @@ Default: 0
 
 ---
 
-#### g_revenge
+#### g_revenge {/* #g_revenge */}
 
 Players will see a "REVENGE!" announce on their screen if they kill the last player who killed them. SINCE 2.2.1: 1XP is awarded for every revenge.  
 0 : Disable  
@@ -1893,7 +1893,7 @@ Default: 0
 
 ---
 
-#### lua_modules
+#### lua_modules {/* #lua_modules */}
 
 LUA scripts you want to run on the server, delimited by a space (these have to be placed in the nitmod folder of your server)  
 Example: If you want to run "script1.lua" and "script2.lua": set lua_modules "script1.lua script2.lua"  
@@ -1901,14 +1901,14 @@ Default: ""
 
 ---
 
-#### lua_allowedModules
+#### lua_allowedModules {/* #lua_allowedmodules */}
 
 If set, only LUA modules with the matching sha1 signatures listed in this cvar will be allowed to load.  
 Default: ""  
 
 ---
 
-#### g_autoQuitDelay
+#### g_autoQuitDelay {/* #g_autoquitdelay */}
 
 Delay in minutes before sending "quit" command to the server. Server has to be empty. Useful for servers running in a loop, so they can be restarted without any admin intervention.  
 Set to 0 to disable this feature.  
@@ -1916,7 +1916,7 @@ Default: 0
 
 ---
 
-#### g_hitboxes
+#### g_hitboxes {/* #g_hitboxes */}
 
 Controls new advanced animation linked players hitboxes (Bitflag).  
 0 : Disable, server use "standard" hitboxes + ETPro 'real head' and N!tmod 'real body' if enabled  
@@ -1929,7 +1929,7 @@ Default: 0
 
 ---
 
-#### g_realBody
+#### g_realBody {/* #g_realbody */}
 
 Bitflag to control various body hitbox options.  
 Normal body hitbox is big compared to the player, so you can get bodyshots when you�re not aiming at a player's body.  
@@ -1943,7 +1943,7 @@ Default: 0
 
 ---
 
-#### g_realHead
+#### g_realHead {/* #g_realhead */}
 
 Toggle ETPro "real head" code. Head hitbox will follow the player animation. This is HIGHLY recommended.  
 0 : Disable  
@@ -1952,7 +1952,7 @@ Default: 1
 
 ---
 
-#### g_headshot
+#### g_headshot {/* #g_headshot */}
 
 Bitflag for Headshot mode options  
 1 : Only headshots do damage  
@@ -1962,7 +1962,7 @@ Default: 0
 
 ---
 
-#### g_weapons
+#### g_weapons {/* #g_weapons */}
 
 Bitflag to control various weapon options  
 1 : Knife can get headshots  
@@ -1985,7 +1985,7 @@ Default: 0
 
 ---
 
-#### g_dualSMG
+#### g_dualSMG {/* #g_dualsmg */}
 
 (Bitflag) Allow players to carry a 2nd SMG (MP40 or Thompson). This option does NOT work for CovertOps AND Soldiers.  
 0 : Disable  
@@ -1995,7 +1995,7 @@ Default: 0
 
 ---
 
-#### g_damageweapons
+#### g_damageweapons {/* #g_damageweapons */}
 
 Bitflag to enable ability to shoot some weapons to damage and destroy them  
 1 : Hand grenades can be damaged  
@@ -2009,7 +2009,7 @@ Default: 0
 
 ---
 
-#### g_secureShrubPassword
+#### g_secureShrubPassword {/* #g_secureshrubpassword */}
 
 If set, "Secure Shrubbot Login" will be enabled.  
 When this feature is enabled, some important !commands require admins to be logged in using the "/sslogin".  
@@ -2019,7 +2019,7 @@ Default: ""
 
 ---
 
-#### g_GUIDChecks
+#### g_GUIDChecks {/* #g_guidchecks */}
 
 If enabled, server will check clients NGUID. If the test fails, server will kick the client.  
 0 : Disable  
@@ -2028,7 +2028,7 @@ Default: 1
 
 ---
 
-#### g_IPChecks
+#### g_IPChecks {/* #g_ipchecks */}
 
 If enabled, server will check clients IP. If the test fails, server will kick the client.  
 0 : Disable  
@@ -2037,7 +2037,7 @@ Default: 1
 
 ---
 
-#### shoutcastPassword
+#### shoutcastPassword {/* #shoutcastpassword */}
 
 Shoutcaster password.  
 When this feature is enabled, players will be able to log in using the "/sclogin password" client command.  
@@ -2053,7 +2053,7 @@ Default: ""
 
 ---
 
-#### g_misc
+#### g_misc {/* #g_misc */}
 
 Bitflag to control a few miscellaneous options.  
 1 : Don't let teammates disarm dynamite near objective (only the dynamite owner can disarm it, and enemies, of course...)  
@@ -2067,7 +2067,7 @@ Default: 0
 
 ---
 
-#### g_spectatorNames
+#### g_spectatorNames {/* #g_spectatornames */}
 
 If enabled, spectators will be able to see name above players (a sort of "minimal shoutcaster status")  
 0 : Disable  
@@ -2076,7 +2076,7 @@ Default: 0
 
 ---
 
-#### g_teamChangeDelay
+#### g_teamChangeDelay {/* #g_teamchangedelay */}
 
 /team Flood Protection  
 If enabled, it sets the minimum delay, in milliseconds, before a new team change.  
@@ -2087,7 +2087,7 @@ Default: 0
 
 ---
 
-#### n_SQLiteDBPath
+#### n_SQLiteDBPath {/* #n_sqlitedbpath */}
 
 Absolute path to the SQLite database file.  
 Must include filename (ex: C:\nitmod.sqlite) !!  
@@ -2098,7 +2098,7 @@ Default: ""
 
 ---
 
-#### n_UserDBSync
+#### n_UserDBSync {/* #n_userdbsync */}
 
 For use with multiple servers on a single SQLite DB.  
 If enabled, server will re-load the user from database when he connects to avoid data loss.  
@@ -2109,7 +2109,7 @@ Default: 0
 
 ---
 
-#### n_userMail
+#### n_userMail {/* #n_usermail */}
 
 If enabled, players will be allowed to send "mails" to offline players.  
 This feature can be useful if a player needs to contact a server admin but isn't connected at the same time.  
@@ -2120,7 +2120,7 @@ Note: Requires a valid SQLite database! See n_SQLiteDBPath
 
 ---
 
-#### n_mapRecords
+#### n_mapRecords {/* #n_maprecords */}
 
 Enable/Disable Map Spree Records and Map Frag Records  
 0 : Disable  
@@ -2130,7 +2130,7 @@ Note: Requires a valid SQLite database! See n_SQLiteDBPath
 
 ---
 
-#### n_proneDelay
+#### n_proneDelay {/* #n_pronedelay */}
 
 Options to modify the way player proning works  
 0 : No spread change, players can't stand up for 750 milliseconds (normal behavior)  
@@ -2141,7 +2141,7 @@ Default: 0
 
 ---
 
-#### n_dynamiteTimer
+#### n_dynamiteTimer {/* #n_dynamitetimer */}
 
 Sets how many milliseconds it takes to a dynamite to explode after it has been armed.  
 Default: 30000  
@@ -2149,28 +2149,28 @@ Note: If set lower than 5000, or higher than 60000, default value is used.
 
 ---
 
-#### g_throwDistance
+#### g_throwDistance {/* #g_throwdistance */}
 
 Sets the distance a ammo or health pack is thrown.  
 Default: 75  
 
 ---
 
-#### g_dropAmmo
+#### g_dropAmmo {/* #g_dropammo */}
 
 Sets the number of ammopacks a FieldOps drops when killed.  
 Default: 0  
 
 ---
 
-#### g_dropHealth
+#### g_dropHealth {/* #g_drophealth */}
 
 Sets the number of medpacks a Medic drops when killed.  
 Default: 0  
 
 ---
 
-#### n_ammoPackSinkDelay
+#### n_ammoPackSinkDelay {/* #n_ammopacksinkdelay */}
 
 Delay (in milliseconds) before dropped ammopacks disappear.  
 Default: 30000  
@@ -2178,7 +2178,7 @@ Note: If set lower than 5000, or higher than 60000, default value is used.
 
 ---
 
-#### n_medPackSinkDelay
+#### n_medPackSinkDelay {/* #n_medpacksinkdelay */}
 
 Delay (in milliseconds) before dropped medpacks disappear.  
 Default: 30000  
@@ -2186,21 +2186,21 @@ Note: If set lower than 5000, or higher than 60000, default value is used.
 
 ---
 
-#### g_ammoCabinetTime
+#### g_ammoCabinetTime {/* #g_ammocabinettime */}
 
 Time, in milliseconds, it takes for ammo packs to re-appear in ammo cabinets  
 Default: 60000  
 
 ---
 
-#### g_healthCabinetTime
+#### g_healthCabinetTime {/* #g_healthcabinettime */}
 
 Time, in milliseconds, it takes for health packs to re-appear in health cabinets  
 Default: 10000  
 
 ---
 
-#### g_flushItems
+#### g_flushItems {/* #g_flushitems */}
 
 Allows dropped items to lay flush with the angle of the ground they are on.  
 0 : Disable  
@@ -2209,14 +2209,14 @@ Default: 1
 
 ---
 
-#### g_dropObj
+#### g_dropObj {/* #g_dropobj */}
 
 If set higher than 0, players can drop the objective *value+1* times per life, using "dropobj" command (can be used in console or bound to a key).  
 Default: 0  
 
 ---
 
-#### n_allowDropWeapon
+#### n_allowDropWeapon {/* #n_allowdropweapon */}
 
 If enabled, players can drop their primary weapon to the floor using "dropweapon" command (can be used in console or bound to a key).  
 0 : Disable  
@@ -2225,7 +2225,7 @@ Default: 0
 
 ---
 
-#### n_preciseLandmineTrigger
+#### n_preciseLandmineTrigger {/* #n_preciselandminetrigger */}
 
 If enabled, player bounding box has to be inside the landmine bounding box to trigger it, instead of calculating the distance between the landmine and the player.  
 0 : Disable  
@@ -2234,7 +2234,7 @@ Default: 0
 
 ---
 
-#### n_crazyGravity
+#### n_crazyGravity {/* #n_crazygravity */}
 
 Toggle Crazy Gravity (Automaticly set to 0 on map end)  
 0 : Disable  
@@ -2243,28 +2243,28 @@ Default: 0
 
 ---
 
-#### n_crazyGravityMin
+#### n_crazyGravityMin {/* #n_crazygravitymin */}
 
 Minimum gravity value when Crazy Gravity is enabled.  
 Default: 100  
 
 ---
 
-#### n_crazyGravityMax
+#### n_crazyGravityMax {/* #n_crazygravitymax */}
 
 Maximum gravity value when Crazy Gravity is enabled.  
 Default: 2000  
 
 ---
 
-#### n_crazyGravityInterval
+#### n_crazyGravityInterval {/* #n_crazygravityinterval */}
 
 Delay, in milliseconds, between gravity changes when Crazy Gravity is enabled.  
 Default: 30000  
 
 ---
 
-#### n_minNameLength
+#### n_minNameLength {/* #n_minnamelength */}
 
 If set higher than 0, minimum length of player names when they connect.  
 Default: 0  
@@ -2272,7 +2272,7 @@ Note: Since 2.2.1, checks for visible characters only (spaces and color codes ar
 
 ---
 
-#### n_reviveSpreeOptions
+#### n_reviveSpreeOptions {/* #n_revivespreeoptions */}
 
 Bitflag to control revive spree options.  
 0 : Disable revive sprees  
@@ -2285,7 +2285,7 @@ Default: 1
 
 ---
 
-#### n_multiReviveTime
+#### n_multiReviveTime {/* #n_multirevivetime */}
 
 Maximum delay, in milliseconds, between two revives, to count as a multi revive.  
 Hardcoded multirevive sound path on client side: sound/nit/mr1.wav, sound/nit/mr2.wav, sound/nit/mr3.wav, sound/nit/mr4.wav  
@@ -2295,35 +2295,35 @@ Default: 2000
 
 ---
 
-#### n_tankMountDelay
+#### n_tankMountDelay {/* #n_tankmountdelay */}
 
 Delay in SECONDS a player must wait before he can re-mount a tank. Set to 0 to disable this delay.  
 Default: 0  
 
 ---
 
-#### n_crouchStandDelay
+#### n_crouchStandDelay {/* #n_crouchstanddelay */}
 
 Delay in MILLISECONDS a player must wait before he can stand up after crouching. Set to 0 to disable this delay.  
 Default: 0  
 
 ---
 
-#### n_standCrouchDelay
+#### n_standCrouchDelay {/* #n_standcrouchdelay */}
 
 Delay in MILLISECONDS a player must wait after crouching and standing up to crouch again. Set to 0 to disable this delay.  
 Default: 0  
 
 ---
 
-#### n_noSkillUpgrades
+#### n_noSkillUpgrades {/* #n_noskillupgrades */}
 
 If enabled, players can still score XP but their skill levels will be locked to 0 (Same as ETPro's b_noskillupgrades).  
 Default: 0  
 
 ---
 
-#### n_killAssistances
+#### n_killAssistances {/* #n_killassistances */}
 
 Bitflag to toggle kill assistances.  
 An announce will appear on your screen if you inflicted damage to a player but someone else kills him.  
@@ -2338,7 +2338,7 @@ Default: 1
 
 ---
 
-#### n_greetingPos
+#### n_greetingPos {/* #n_greetingpos */}
 
 Controls where greeting are displayed.  
 0 : Chat  
@@ -2350,14 +2350,14 @@ Default: 0
 
 ---
 
-#### n_voteMaxTimelimit
+#### n_voteMaxTimelimit {/* #n_votemaxtimelimit */}
 
 If set higher than 0, this caps the maxmim timelimit vote value (Higher values will be capped to this maximum value).  
 Default: 0  
 
 ---
 
-#### n_classesMaxHP
+#### n_classesMaxHP {/* #n_classesmaxhp */}
 
 Allows setting max HP for each classes. Values must be space separated.  
 Classes, in order, are: Soldier, Medic, Engineer, FieldOps, CovertOps.  
@@ -2367,49 +2367,49 @@ Default: 0 0 0 0 0
 
 ---
 
-#### n_NxAC_CvarScan
+#### n_NxAC_CvarScan {/* #n_nxac_cvarscan */}
 
 Set this CVAR to 1 to enable NxAC CVAR Scanner.  
 Default: 0  
 
 ---
 
-#### n_NxAC_CvarScanWait
+#### n_NxAC_CvarScanWait {/* #n_nxac_cvarscanwait */}
 
 Delay in milliseconds before server starts sending cvar queries to a client after he has finished connecting.  
 Default: 10000  
 
 ---
 
-#### n_NxAC_CvarScanDelay
+#### n_NxAC_CvarScanDelay {/* #n_nxac_cvarscandelay */}
 
 Delay in milliseconds between each cvar query. Values too low might cause lags or server command overflow.  
 Default: 750  
 
 ---
 
-#### n_NxAC_CvarScanInterval
+#### n_NxAC_CvarScanInterval {/* #n_nxac_cvarscaninterval */}
 
 Delay in milliseconds before starting a new scan after the previous one has finished.  
 Default: 30000  
 
 ---
 
-#### n_NxAC_CvarScanMaxWarnings
+#### n_NxAC_CvarScanMaxWarnings {/* #n_nxac_cvarscanmaxwarnings */}
 
 Maximum number of warnings before kicking a player who doesn't respect the cvar rules. Instant kick if set to 0.  
 Default: 1  
 
 ---
 
-#### n_NxAC_CheckClientBinary
+#### n_NxAC_CheckClientBinary {/* #n_nxac_checkclientbinary */}
 
 Set this CVAR to 1 to enable NxAC Client Checksum verification.  
 Default: 0  
 
 ---
 
-#### n_NxAC
+#### n_NxAC {/* #n_nxac */}
 
 Controls actions taken by NxAC when a cheat violation is detected.  
 See NxAC Setup tutorial for further informations.  
@@ -2420,7 +2420,7 @@ Default: 2
 
 ---
 
-#### g_artilleryHints
+#### g_artilleryHints {/* #g_artilleryhints */}
 
 Toggle friendly artillery zone hints (can also be dissabled on client side with cg_artilleryHints).  
 0 : Disable  
