@@ -20,9 +20,9 @@
     "stylelint": "stylelint \"src/**/*.css\""
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.0",
+    "@docusaurus/core": "3.10.1",
     "@docusaurus/faster": "^3.10.0",
-    "@docusaurus/preset-classic": "3.10.0",
+    "@docusaurus/preset-classic": "3.10.1",
     "@easyops-cn/docusaurus-search-local": "^0.55.1",
     "@mdx-js/react": "^3.1.1",
     "baseline-browser-mapping": "^2.10.16",
@@ -33,9 +33,9 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "3.10.0",
+    "@docusaurus/eslint-plugin": "3.10.1",
     "@docusaurus/module-type-aliases": "^3.10.0",
-    "@docusaurus/tsconfig": "3.10.0",
+    "@docusaurus/tsconfig": "3.10.1",
     "@docusaurus/types": "^3.10.0",
     "@dreamsicle.io/stylelint-config-tailwindcss": "^1.2.2",
     "@eslint/js": "^10.0.0",
