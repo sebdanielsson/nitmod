@@ -39,7 +39,7 @@
     "@docusaurus/types": "^3.10.2",
     "@dreamsicle.io/stylelint-config-tailwindcss": "^1.2.2",
     "@eslint/js": "^10.0.0",
-    "eslint": "^10.0.0",
+    "eslint": "^10.11.0",
     "oxfmt": "^0.70.0",
     "stylelint": "^17.6.0",
     "stylelint-config-html": "^2.0.0",
