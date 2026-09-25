@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx";
+import { clsx } from "cn/lite";
 import styles from "./HomepageFeatures.module.css";
 
 interface FeatureProps {

@@ -27,7 +27,7 @@
     "@mdx-js/react": "^3.1.1",
     "baseline-browser-mapping": "^2.11.26",
     "caniuse-lite": "^1.0.30001812",
-    "clsx": "^2.1.1",
+    "cn": "^0.4.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
