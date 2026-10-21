@@ -11,7 +11,7 @@
         "@easyops-cn/docusaurus-search-local": "^0.55.3",
         "@mdx-js/react": "^3.1.1",
         "baseline-browser-mapping": "^2.11.30",
-        "caniuse-lite": "^1.0.30001817",
+        "caniuse-lite": "^1.0.30001818",
         "cn": "^0.5.0",
         "prism-react-renderer": "^2.4.1",
         "react": "^19.3.1",
@@ -1007,7 +1007,7 @@
 
     "caniuse-api": ["caniuse-api@3.0.0", "", { "dependencies": { "browserslist": "^4.0.0", "caniuse-lite": "^1.0.0", "lodash.memoize": "^4.1.2", "lodash.uniq": "^4.5.0" } }, "sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw=="],
 
-    "caniuse-lite": ["caniuse-lite@1.0.30001817", "", {}, "sha512-uZ1JG80BwhtMalIAGPxPfmNhHyd/B/nTdr3hITWlRamSyAdUStP1Gop01e7SD5q6J90ixJvWDbvmiFVfDgn4bw=="],
+    "caniuse-lite": ["caniuse-lite@1.0.30001818", "", {}, "sha512-XJbgo4adscw7R4MZU4/qVFkoMyPaNUAWmdNY4o/k9x7fFwmv4frIlndI9lWuaxviW9ObiZel9LuncnQPn6hQ5A=="],
 
     "ccount": ["ccount@2.0.1", "", {}, "sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg=="],
 
