@@ -11,7 +11,7 @@
         "@easyops-cn/docusaurus-search-local": "^0.55.3",
         "@mdx-js/react": "^3.1.1",
         "baseline-browser-mapping": "^2.11.35",
-        "caniuse-lite": "^1.0.30001822",
+        "caniuse-lite": "^1.0.30001823",
         "cn": "^0.5.2",
         "prism-react-renderer": "^2.4.1",
         "react": "^19.3.1",
